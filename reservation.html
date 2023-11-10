@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <title>Restaurant Reservation</title>
+</head>
+<body>
+    <div class="container">
+        <button class="close-button" onclick="goBack()">X</button>
+        <h1>Reservation at Mrs Bean Cafe</h1>
+
+        <form onsubmit="return submitReservation()">
+            <div class="form-row">
+                <label for="partySize">Party Size:</label>
+                <select id="partySize" required>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                </select>
+
+                <label for="reservationDate">Reservation Date:</label>
+                <input type="date" id="reservationDate" required>
+
+                <label for="reservationTime">Reservation Time:</label>
+                <input type="time" id="reservationTime" required>
+            </div>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+
+        <div id="confirmationMessage">
+            <h2>Reservation Confirmed!</h2>
+            <p>Thank you for choosing our restaurant. We look forward to serving you.</p>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function submitReservation() {
+            var partySize = document.getElementById('partySize').value;
+            var reservationDate = document.getElementById('reservationDate').value;
+            var reservationTime = document.getElementById('reservationTime').value;
+
+            if (partySize && reservationDate && reservationTime) {
+                document.getElementById('confirmationMessage').style.display = 'block';
+                return false; // prevent form submission
+            } else {
+                alert('Please fill in all required fields.');
+                return false; // prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

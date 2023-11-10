@@ -1,0 +1,209 @@
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover to your preference */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Add more margin as needed */
+}
+
+/* Define specific dimensions for your slideshow images */
+.slideshow-container img {
+    max-width: 100%; /* Set the maximum width to ensure responsiveness */
+    height: auto 70%; /* Set the desired height for your images */
+}
+
+/* Add margin below the header and above the picture box */
+header + .picture-box {
+    margin-top: 20px;
+}
+
+.slideshow-container + .dot{
+    margin-bottom: 990px;
+}
+
+/* Add your background image to the body */
+body {
+    background-image: url('images/chosen_cafe_image-overlayed.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+}
+
+/* Style for the dots/circles */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active dot style */
+.dot.active {
+    background-color: #717171;
+}
+
+/* Style for the custom button */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    background-color: #ff8800;
+}
+
+
+/* Style for the concierge information */
+.concierge-info {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Flex container for side-by-side layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+    justify-content: space-between; /* Adjust as needed */
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+/* Style for the video container */
+.video-container {
+    position: relative;
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the video container */
+    margin-top: 20px;
+}
+
+/* Style for the video */
+#customVideo {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for white-container */
+.white-container {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    margin: 20px 10px; /* Adjust margin as needed */
+}
+
+.white-container h2 {
+    font-size: 12px;
+}
+
+.small-image {
+    max-width: 24%;
+    padding: 1px; /* Adjust the padding to make the gaps smaller */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Style for white-container2 */
+.white-container2 {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    max-width: 35%; /* Adjust the width as needed, if not the concierge info and video not side by side */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.white-container2 img {
+    justify-content: center;
+}
+
+.grey-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.social-icons {
+    margin-top: 20px;
+    padding: 10px; /* Adjust the padding to control the spacing between icons */
+}
+.social-icons a {
+    display: inline-block; /*If i dont put this i can see the underline link*/
+} 
+.social-icons img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+}
+
+footer {
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px; /* Smaller font size */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .video-container,
+    .white-container,
+    .white-container2 {
+        width: 100%;
+        max-width:fit-content;
+    }
+}
+
+/* Style for the concierge-video-container */
+.concierge-video-container {
+    display: flex;
+    align-items: center; /* Align items at the center of the container */
+    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+    margin-top: 20px; /* Adjust margin as needed */
+}
