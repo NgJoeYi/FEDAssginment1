@@ -31,10 +31,11 @@ nav a:hover {
 
 .slideshow-container {
     position: relative;
-    width: 700px; /* Set a fixed pixel value for the width */
+    width: 900px; /* Set a fixed pixel value for the width */
     max-height: 500px; /* Set the maximum height to ensure responsiveness */
     margin: 0 auto; /* Center the slideshow container */
     overflow: hidden; /* Hide overflowing content */
+    margin-top: 50px;
 }
 
 /* Style for the slideshow images */
