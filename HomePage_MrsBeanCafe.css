@@ -39,8 +39,8 @@ nav a:hover {
 }
 
 .slideshow-container img {
-    width: 90vw; /* Set the desired width for your images */
-    max-height: 100vh; /* Set the maximum height to ensure responsiveness */
+    width: 400px; /* Set the desired width for your images */
+    height: 300px; /* Set the desired height for your images */
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
