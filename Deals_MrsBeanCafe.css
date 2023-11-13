@@ -43,9 +43,16 @@ body {
     height: 100vh; 
     text-align: center;
 }
+
 .button .body-content {
     max-width: 600px; 
+    color: #fff;
 }
+
+.body-content.hide {
+    opacity: 0;
+}
+
 .button .body-content h1 {
     font-size: 30px; 
     color: #fff;
@@ -70,6 +77,7 @@ body {
     background-color: #a2a2a2;
 }
 /*---------------------------------------------------------------------------------------*/
+
 
 footer {
     background-color: hsl(0, 0%, 20%);
