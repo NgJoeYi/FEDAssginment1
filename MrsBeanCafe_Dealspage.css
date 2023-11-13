@@ -1,0 +1,82 @@
+/* Style the header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 5px; /* Reduce the margin between the header and h1 */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ffd700; 
+}
+
+body {
+    background-image: url('images/chosen_cafe_image-overlayed.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+}
+
+/*---------------------------------------------------------------------------------------*/
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center;
+}
+.button .body-content {
+    max-width: 600px; 
+}
+.button .body-content h1 {
+    font-size: 30px; 
+    color: #fff;
+    margin-bottom: 60px; /* Reduce the margin between h1 and paragraph */
+}
+.button .body-content p {
+    font-size: 20px; 
+    color: #fff;
+    margin-bottom: 30px; /* Add some margin for spacing */
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+.button-link:hover {
+    background-color: #a2a2a2;
+}
+/*---------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px; 
+}
+
