@@ -29,19 +29,19 @@ nav a:hover {
     color: #ffd700; /* Change the color on hover to your preference */
 }
 
-/* Slideshow container */
 .slideshow-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px; /* Add more margin as needed */
+    position: relative;
+    width: 700px; /* Set a fixed pixel value for the width */
+    max-height: 500px; /* Set the maximum height to ensure responsiveness */
+    margin: 0 auto; /* Center the slideshow container */
+    overflow: hidden; /* Hide overflowing content */
 }
 
+/* Style for the slideshow images */
 .slideshow-container img {
-    width: 600px; /* Set a fixed pixel value for the width */
-    max-height: 400px; /* Set the maximum height to ensure responsiveness */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    width: 100%; /* Use 100% width to fill the slideshow container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container */
 }
 
 /* Add margin below the header and above the picture box */
