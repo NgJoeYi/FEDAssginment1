@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Mrs Bean Cafe</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="Menu_MrsBeanCafe.css">
 </head>
+
 <body>
     <header>
         <h1>Mrs Bean Cafe</h1>
@@ -20,190 +23,122 @@
         </nav>
     </header>
 
-    <!-- Container 1 -->
-    <div class="white-container">
-        <section class="menu-title">
-            <h2>Mrs Bean's Menu</h2>
-            <div class="menu-item">
-                <h1>Breakfast</h1>
-                <ul class="food-list">
-                    <li>
-                        <img src="images/menu_img1.png" alt="Eggs Benedict" class="food-image">
-                        <p>Eggs Benedict</p>
-                        <button onclick="addToCart('Eggs Benedict',21.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img2.png" alt="Truffle Basil Pesto" class="food-image">
-                        <p>Truffle Basil Pesto</p>
-                        <button onclick="addToCart('Truffle Basil Pesto',19.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img3.png" alt="Truffled Potato & Leek Soup" class="food-image">
-                        <p>Truffled Potato & Leek Soup</p>
-                        <button onclick="addToCart('Truffled Potato & Leek Soup',13.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img4.png" alt="Sunny Side Up" class="food-image">
-                        <p>Sunny Side Up</p>
-                        <button onclick="addToCart('Sunny Side Up',10.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img5.png" alt="Truffled Mushroom" class="food-image">
-                        <p>Truffled Mushroom</p>
-                        <button onclick="addToCart('Truffled Mushroom',17.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img6.png" alt="Breakfast Steak" class="food-image">
-                        <p>Breakfast Steak</p>
-                        <button onclick="addToCart('Breakfast Steak',20.99)">Add to Cart</button>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <div class="image-container">
+        <img src="images/menu_img1.png" alt="Image 1">
+        <img src="images/menu_img2.png" alt="Image 2">
+        <img src="images/menu_img3.png" alt="Image 3">
     </div>
 
-    <!-- Container 2 -->
-    <div class="white-container">
-        <section class="menu-title">
-            <div class="menu-item">
-                <h1>Lunch</h1>
-                <ul class="food-list">
-                    <li>
-                        <img src="images/menu_img7.png" alt="Ceasar Salad" class="food-image">
-                        <p>Ceasar Salad</p>
-                        <button onclick="addToCart('Ceasar Salad',6.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img8.png" alt="White Christmas Salad" class="food-image">
-                        <p>White Christmas Salad</p>
-                        <button onclick="addToCart('White Christmas Salad',12.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img9.png" alt="Scrambled Egg" class="food-image">
-                        <p>Scrambled Egg</p>
-                        <button onclick="addToCart('Scrambled Egg',5.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img10.png" alt="Impossible Burger" class="food-image">
-                        <p>Impossible Burger</p>
-                        <button onclick="addToCart('Impossible Burger',12.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img11.png" alt="Veggi Burger" class="food-image">
-                        <p>Veggie Burger</p>
-                        <button onclick="addToCart('Veggie Burger',10.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img12.png" alt="Miso Salmon Grain Bowl" class="food-image">
-                        <p>Miso Salmon Grain Bowl</p>
-                        <button onclick="addToCart('Miso Salmon Grain Bowl',18.99)">Add to Cart</button>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <div class="menu-header">
+        <h2>Our Menu</h2>
+        <h4>Breakfast 8am – 3pm</h4>
     </div>
 
-    <!-- Container 3 -->
-    <div class="white-container">
-        <section class="menu-title">
-            <div class="menu-item">
-                <h1>Dinner</h1>
-                <ul class="food-list">
-                    <li>
-                        <img src="images/menu_img13.png" alt="Truffled Roast Chicken" class="food-image">
-                        <p>Truffled Roast Chicken</p>
-                        <button onclick="addToCart('Truffled Roast Chicken',11.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img14.png" alt="Truffle Fries" class="food-image">
-                        <p>Truffle Fries</p>
-                        <button onclick="addToCart('Truffle Fries',8.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img15.png" alt="Pulled Pork & Avocado Eggs Benedict" class="food-image">
-                        <p>Pulled Pork & Avocado Eggs Benedict</p>
-                        <button onclick="addToCart('Pulled Pork & Avocado Eggs Benedict',10.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img16.png" alt="Spicy Cra Rigatoni" class="food-image">
-                        <p>Spicy Cra Rigatoni</p>
-                        <button onclick="addToCart('Spicy Cra Rigatoni',12.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img17.png" alt="Battered Fish & Chips" class="food-image">
-                        <p>Battered Fish & Chips</p>
-                        <button onclick="addToCart('Battered Fish & Chips',10.99)">Add to Cart</button>
-                    </li>
-                    <li>
-                        <img src="images/menu_img18.png" alt="Mushroom Ravioli" class="food-image">
-                        <p>Mushroom Ravioli</p>
-                        <button onclick="addToCart('Mushroom Ravioli', 5.99)">Add to Cart</button>
-                    </li>
-                </ul>
+    <!-- Add this to your HTML structure -->
+    <div id="cart-container" class="cart-container">
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span id="close-cart">&times;</span>
             </div>
-        </section>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be added dynamically here -->
+            </div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+        </div>
     </div>
 
-    <!-- Cart section -->
     <div class="white-container">
-        <section class="menu-title">
-            <h2>Your Cart</h2>
-            <ul id="cart-list">
-                <!-- Cart items will be displayed here using JavaScript -->
-            </ul>
-            <button onclick="checkout()">Checkout</button> <!-- Add the Checkout button here -->
-        </section>
+        <div class="breakfast">
+            <!-- Existing menu item -->
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>HOMEMADE BANANA BREAD (V)</h3>
+                        <p>Toasted & served with Gula Melaka Cream</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$7</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <!-- logo and functionality for adding to cart can go here -->
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Homemade Banana Bread" data-item-price="7.00">
+                </div>
+            </div>
+
+            <!-- New menu items -->
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>AVOCADO TOAST (V)</h3>
+                        <p>Smashed avocado, cherry tomatoes, and feta on whole-grain toast</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$10</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Avocado Toast" data-item-price="10.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>OMELETTE</h3>
+                        <p>Three-egg omelette with mushrooms, spinach, and cheese</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$13</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Omelette" data-item-price="13.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>SMOKED SALMON BAGEL</h3>
+                        <p>Bagel with smoked salmon, cream cheese, red onion, and capers</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$15</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Smoked Salmon Bagel" data-item-price="15.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>GREEK YOGURT PARFAIT (V)</h3>
+                        <p>Greek yogurt with mixed berries, honey, and granola</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$8</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Greek Yogurt Parfait" data-item-price="8.00">
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
+        <!-- Footer content goes here -->
         <p>MARINA BAY SANDS | 10 BAYFRONT AVENUE, SINGAPORE 018956 | HOTEL TOWER 1, LEVEL 57 SANDS SKYPARK</p>
         <p>+65 6708 9288</p>
         <p>MONDAY TO SUNDAY 12PM TO 12AM (MIDNIGHT)</p>
         <p>&copy; 2023 Mrs Bean Cafe</p>
     </footer>
 
-    <script>
-        let cartItems = {}; // Define cartItems as an empty object
-
-        function addToCart(item, price) {
-            if (!cartItems[item]) {
-                cartItems[item] = { quantity: 1, price };
-            } else {
-                cartItems[item].quantity++;
-            }
-            updateCartDisplay();
-        }
-
-        function checkout() {
-            alert('Thank you for your order!'); 
-            clearCart(); // Clears the cart after checkout
-        }
-
-        function clearCart() {
-            cartItems = {}; // Clears the cart
-            updateCartDisplay(); // Updates the cart display
-        }
-
-        function updateCartDisplay() {
-            const cartList = document.getElementById('cart-list');
-            cartList.innerHTML = '';
-            let total = 0;
-
-            for (const item in cartItems) {
-                const li = document.createElement('li');
-                const itemInfo = cartItems[item];
-                const itemText = itemInfo.quantity > 1 ? `${item} x${itemInfo.quantity}` : item;
-                const itemPrice = itemInfo.quantity * itemInfo.price;
-                li.textContent = `${itemText} - $${itemPrice.toFixed(2)}`;
-                cartList.appendChild(li);
-                total += itemPrice;
-            }
-
-            // Add the total price to the cart
-            const totalLi = document.createElement('li');
-            totalLi.textContent = `Total: $${total.toFixed(2)}`;
-            cartList.appendChild(totalLi);
-        }
-    </script>
+    <script src="Menu_MrsBeanCafe.js"></script>
 </body>
+
 </html>
