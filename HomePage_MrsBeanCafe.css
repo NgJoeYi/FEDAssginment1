@@ -144,10 +144,13 @@ body {
 }
 
 .small-image {
-    max-width: 24%;
-    padding: 1px; /* Adjust the padding to make the gaps smaller */
+    width: 100%; /* Take up 100% of the available width */
+    max-width: 290px; /* Set a maximum width if needed */
+    height: auto;
+    margin: 1px; /* Adjust the margin to make the gaps smaller */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
 
 
 /* Style for white-container2 */

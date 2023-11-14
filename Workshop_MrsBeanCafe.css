@@ -38,7 +38,8 @@ body {
 /*---------------------------------------------------------------------------------------*/
 .image-overlay img {
     width: 95%;
-    height: 500px; /* Set the desired height in pixels or another unit */
+    height: auto;
+    max-height: 500px; /* Set the desired height in pixels or another unit */
     object-fit: cover;
 }
 
@@ -84,11 +85,11 @@ body {
     display: block;
     margin-top: 10px; /* Adjusted margin */
     color: #fff;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 350%);
+    transform: translate(-50%, 300%);
 }
 /*----------------------------------------------------------------------------------------*/
 .text-box {
@@ -189,7 +190,6 @@ body {
 }
 
 /*----------------------------------------------------------------------------------------*/
-
 .machine-content {
     padding: 20px;
     text-align: center;
@@ -226,4 +226,75 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-size: 10px; 
+}
+
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .image-overlay img {
+        max-height: 300px; /* Adjust the height for smaller screens */
+    }
+
+    .image-overlay 
+    .text-overlay h1 {
+        font-size: 35px; /* Adjusted font size for screens up to 768 pixels wide */
+    }
+
+    .image-overlay 
+    .text-overlay p {
+        display: none;
+    }
+
+    .image-overlay 
+    .text-overlay h3 {
+        font-size: 17px; /* Adjusted font size for screens up to 768 pixels wide */
+        transform: translate(-50%, 250%); /* Adjusted vertical position */
+    }
+
+    .image-overlay 
+    .text-overlay 
+    .arrow-down {
+        font-size: 15px; /* Adjusted font size for screens up to 768 pixels wide */
+        transform: translate(-50%, 140%); /* Adjusted vertical position */
+    }
+
+    .text-box {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .text-box h3 {
+        font-weight: unset;
+        font-size: 13px; /* Adjusted font size for screens up to 768 pixels wide */
+        max-width: 100%; /* Ensure text doesn't overflow the container */
+        margin-bottom: 10px; /* margin for spacing */
+    }
+
+    .overlay-text h2 {
+        font-size: 12px;
+    }
+
+    .gray-text-box {
+        display: flex;
+        flex-direction: column; /* Stack items vertically by default */
+        text-align: center; /* Center-align text */
+    }
+    
+    .gray-text-box img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+        max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+        object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+        margin: 0 auto; /* Center the image horizontally within its container */
+    }
+    
+    .gray-text-box-content {
+        padding: 20px;
+    }
+
+}
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+
+    
 }
