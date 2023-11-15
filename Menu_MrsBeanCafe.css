@@ -1,45 +1,31 @@
-body {
-    margin: 0; /*no space at the sides*/
-    padding: 0;
+/* -- Style the header ----------------------------------------------------- */
+.header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    padding: 40px; /* Add padding to adjust spacing around header content */
+    height: 60px; /* Set the height of the header */
 }
 
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Navigation Styles */
 nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+    list-style: none; /* Remove default list styling for the navigation */
+    display: flex; /* Use flexbox layout for the navigation items */
+    gap: 50px; /* Adjust the gap between menu items */
+    font-size: 20px; /* Set the font size for navigation items */
+    font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
+    margin-right: 20px; /* Add margin to the right of the navigation */
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    text-decoration: none; /* Remove link underlines */
+    color: #ffffff; /* Set the text color for navigation links */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
 }
 
 nav a:hover {
-    color: #ffd700; /* Change the color on hover to your preference */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px; /* Increase font size for better readability */
+    color: #ffd700; /* Change the color on hover */
 }
 
 body {
@@ -48,6 +34,17 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: transparent;
+}
+/*-- End of header + body ---------------------------------------------------------------*/
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px; /* Increase font size for better readability */
 }
 
 .image-container {
@@ -72,7 +69,7 @@ body {
     margin-bottom: 20px; /* Adjust the margin as needed */
 }
 .white-container {
-    background-color: rgb(236, 228, 225);
+    background-color: rgb(195, 194, 194);
     padding: 40px;
     margin: 20px 0;
 }
@@ -156,4 +153,132 @@ body {
 
 #checkout-button:hover {
     background-color: #b99b37;
+}
+
+
+.additional-section {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.additional-section h2 {
+    color: #ffffff;
+}
+
+.additional-section p {
+    color: #ffffff;
+}
+
+.additional-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.additional-section a:hover {
+    background-color: #ff8800;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        text-align: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 30px; /* Add padding to adjust spacing */
+        min-height: 85px; /* Set your desired minimum height */
+    }
+    
+
+    header h1 {
+        display: block; /* Ensure h1 is a block element */
+        font-size: 28px; /* Adjust the font size as needed */
+        margin-bottom: 10px; /* Add space between h1 and nav */
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center; /* Center the list items */
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 20px;
+    }
+
+    nav li {
+        display: block; /* Stack list items */
+        margin-bottom: 5px; /* Adjust the margin between list items */
+    }
+    
+    .image-container {
+        width: 100%; /* Set the width to 100% for responsiveness */
+        height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+        display: flex;
+        flex-direction: row; /* Stack images vertically on small screens */
+    }
+
+    .image-container img {
+        width: 33.33%; /* Ensure images take up the full width of the container */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    .menu-header h2 {
+        font-size: 30px;
+    }
+
+    .menu-header h4 {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+    }
+
+    .additional-section a {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        background-color: #333; /* Background color for the header */
+        color: #fff; /* Text color for the header */
+        padding: 40px; /* Add padding to adjust spacing around header content */
+        height: 60px; /* Set the height of the header */
+    }
+    
+    nav ul {
+        gap: 50px; /* Adjust the gap between menu items */
+        font-size: 20px; /* Set the font size for navigation items */
+        font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
+        margin-right: 20px; /* Add margin to the right of the navigation */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        background-color: #333; /* Background color for the header */
+        color: #fff; /* Text color for the header */
+        padding: 40px; /* Add padding to adjust spacing around header content */
+        height: 60px; /* Set the height of the header */
+    }
+    
+    nav ul {
+        gap: 50px; /* Adjust the gap between menu items */
+        font-size: 20px; /* Set the font size for navigation items */
+        font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
+        margin-right: 20px; /* Add margin to the right of the navigation */
+    }
 }

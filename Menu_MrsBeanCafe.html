@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Mrs Bean Cafe</h1>
         <nav>
             <ul>
@@ -29,12 +29,12 @@
         <img src="images/menu_img3.png" alt="Image 3">
     </div>
 
+
+<!-- BREAKFAST ---------------------------------------------------------------->
     <div class="menu-header">
         <h2>Our Menu</h2>
         <h4>Breakfast 8am – 3pm</h4>
     </div>
-
-    <!-- Add this to your HTML structure -->
     <div id="cart-container" class="cart-container">
         <div id="cart" class="cart">
             <div class="cart-header">
@@ -130,8 +130,215 @@
         </div>
     </div>
 
+
+
+<!-- LUNCH ---------------------------------------------------------------->
+    <div class="menu-header">
+        <h4>Lunch 11am – 3pm</h4>
+    </div>
+
+
+    <div id="cart-container" class="cart-container">
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span id="close-cart">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be added dynamically here -->
+            </div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+        </div>
+    </div>
+    
+    <div class="white-container">
+        <div class="lunch">
+            <!-- Lunch menu items -->
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>CHICKEN CAESAR SALAD</h3>
+                        <p>Romaine lettuce, grilled chicken, croutons, parmesan cheese, and Caesar dressing</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$12</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <!-- Logo and functionality for adding to cart can go here -->
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Chicken Caesar Salad" data-item-price="12.00">
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>GRILLED VEGGIE WRAP (V)</h3>
+                        <p>Grilled vegetables, hummus, and feta cheese wrapped in a tortilla</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$9</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Grilled Veggie Wrap" data-item-price="9.00">
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>PENNE PASTA PRIMAVERA (V)</h3>
+                        <p>Penne pasta with mixed vegetables in a light tomato sauce</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$11</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Penne Pasta Primavera" data-item-price="11.00">
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>CLASSIC BEEF BURGER</h3>
+                        <p>Beef patty, lettuce, tomato, onion, and cheese on a sesame seed bun</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$14</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Classic Beef Burger" data-item-price="14.00">
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>SPINACH AND FETA STUFFED CHICKEN</h3>
+                        <p>Chicken breast stuffed with spinach and feta, served with mashed potatoes</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$16</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Spinach and Feta Stuffed Chicken" data-item-price="16.00">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!-- DINNER ------------------------------------------------------------------>>
+    <div class="menu-header">
+        <h4>Dinner 5pm – 11pm</h4>
+    </div>
+
+    <div id="cart-container" class="cart-container">
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span id="close-cart">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be added dynamically here -->
+            </div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+    <div class="white-container">
+        <div class="dinner">
+            <!-- Dinner menu items -->
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>GRILLED SALMON</h3>
+                        <p>Grilled salmon fillet with lemon butter sauce, served with roasted vegetables</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$18</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <!-- Logo and functionality for adding to cart can go here -->
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Grilled Salmon" data-item-price="18.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>LOBSTER RAVIOLI</h3>
+                        <p>Homemade lobster-filled ravioli with creamy tomato basil sauce</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$22</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Lobster Ravioli" data-item-price="22.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>FILET MIGNON</h3>
+                        <p>Grilled filet mignon steak with red wine reduction, served with garlic mashed potatoes</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$26</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Filet Mignon" data-item-price="26.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>VEGETARIAN LASAGNA (V)</h3>
+                        <p>Layered pasta with ricotta, spinach, and marinara sauce, topped with melted mozzarella</p>
+                    </div>
+                    <div class = "item-price">
+                        <p>$16</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Vegetarian Lasagna" data-item-price="16.00">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <div class="item-name">
+                        <h3>SURF AND TURF</h3>
+                        <p>Grilled sirloin steak paired with buttery shrimp, served with seasoned vegetables</p>
+                    </div>
+                    <div class="item-price">
+                        <p>$24</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <img src="images/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Surf and Turf" data-item-price="24.00">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- BUTTONS -->
+    <div class="additional-section">
+        <h2>Explore More</h2>
+        <p>Discover our special events and promotions. Join us for an unforgettable dining experience.</p>
+        <a href="Deals_MrsBeanCafe.html"> CHECK OUT DETAILS</a>
+    </div>
+
+<!-- FOOTER ----------------------------------------------------------------------->
     <footer>
-        <!-- Footer content goes here -->
         <p>MARINA BAY SANDS | 10 BAYFRONT AVENUE, SINGAPORE 018956 | HOTEL TOWER 1, LEVEL 57 SANDS SKYPARK</p>
         <p>+65 6708 9288</p>
         <p>MONDAY TO SUNDAY 12PM TO 12AM (MIDNIGHT)</p>
