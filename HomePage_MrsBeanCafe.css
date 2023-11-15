@@ -145,14 +145,12 @@ header + .picture-box {
 
 .small-image {
     width: 100%; /* Take up 100% of the available width */
-    max-width: 290px; /* Set a maximum width if needed */
+    max-width: 270px; /* Set a maximum width if needed */
     height: auto;
-    margin: 1px; /* Adjust the margin to make the gaps smaller */
+    margin: 4px; /* Adjust the margin to make the gaps smaller */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
-
-
-
 /* Style for white-container2 */
 .white-container2 {
     background-color: white;
@@ -203,13 +201,13 @@ footer {
 }
 
 /* Responsive styles for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     header {
         text-align: center;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
         padding: 30px; /* Add padding to adjust spacing */
-        min-height: 85px; /* Set your desired minimum height */
+        min-height: 85px; /* Set desired minimum height */
     }
     
 
@@ -257,7 +255,7 @@ footer {
     }
 
     .small-image {
-        margin: 5px; /* Adjust the margin as needed */
+        width: 46%; /* Set the width for a 2x2 grid */
     }
     
     .grey-line {
@@ -278,13 +276,14 @@ footer {
 
 
 /* Responsive styles for smaller screens */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 701px) and (max-width: 1000px) {
     .header {
         background-color: #333; /* Background color for the header */
         color: #fff; /* Text color for the header */
         padding: 40px; /* Add padding to adjust spacing around header content */
         height: 60px; /* Set the height of the header */
     }
+
     
     nav ul {
         gap: 50px; /* Adjust the gap between menu items */

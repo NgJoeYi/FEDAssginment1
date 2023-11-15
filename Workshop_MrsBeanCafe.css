@@ -220,7 +220,7 @@ footer {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
         padding: 30px; /* Add padding to adjust spacing */
-        min-height: 85px; /* Set your desired minimum height */
+        min-height: 85px; /* Set desired minimum height */
     }
     
 
@@ -311,5 +311,26 @@ footer {
         font-size: 20px; /* Set the font size for navigation items */
         font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
         margin-right: 20px; /* Add margin to the right of the navigation */
+    }
+
+   /* Styles for screens with a maximum width of 600px (adjust as needed) */
+    .gray-text-box img {
+        margin-right: 0; /* Remove the margin on smaller screens */
+    }
+
+    .gray-text-box h1 {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+
+    .gray-text-box h3 {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .gray-text-box p {
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: unset;
     }
 }
