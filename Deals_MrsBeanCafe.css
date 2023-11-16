@@ -49,6 +49,16 @@ footer {
 
 /*------------------------------------------------------------------*/
 
+.limited-time {
+    text-align: center; /* Center the text */
+    background-color: #dfba25; /* Add a background color */
+    padding: 10px; /* Add some padding for better visibility */
+    margin: 20px 0; /* Add margin to create space around the section */
+    color: #333; /* Set the text color */
+    font-size: 22px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+}
+
 .button-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Single column by default */
@@ -119,7 +129,7 @@ footer {
 }
 
 .button-link:hover {
-    background-color: #a2a2a2;
+    background-color: #ff8800;
 }
 /*---------------------------------------------------------------------------------------*/
 

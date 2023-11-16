@@ -98,6 +98,10 @@ footer {
     padding-right: 10px;
 }
 
+.cart-logo:hover {
+    transform: scale(1.2); /* Increase the size on hover (adjust the scale factor as needed) */
+}
+
 /* -------------------------------------- for the cart and checkout button */
 .cart-container {
     position: fixed;
