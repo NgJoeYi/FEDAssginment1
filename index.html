@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      .container{ 
-        display: flex; 
-        width:100%; 
-        flex-wrap:wrap; 
-    } 
-    .split{ 
-        flex-basis:45%; 
-        display:flex; 
-        flex-direction: column; 
-        padding:2%; 
-    } 
-    .button{ 
-        padding: 15px; 
-        border-radius: 15px; 
-        background-color: green; 
-        text-align: center; 
-        text-decoration: none; 
-        color:white; 
-        height: 50%;
-        width:50%; 
-    } 
-    @media screen and (max-width:576px){ 
-        .split{ 
-            flex:1 100%; 
-            flex-basis: 100%; 
-            flex-grow: 0; 
-        } 
-    }
-      
-    </style>
-  </head>
 
-  <body>
-    <section class="container">
-      <div class="split">
-        <img src="https://picsum.photos/400/400" />
-      </div>
-      <div class="split">
-        <h2>This is a pretty awesome heading</h2>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mrs Bean Cafe</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="MrsBeanCafe.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Mrs Bean Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu_MrsBeanCafe.html">Menu</a></li>
+                <li><a href="Workshop_MrsBeanCafe.html">Workshop</a></li>
+                <li><a href="Deals_MrsBeanCafe.html">Deals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="Workshop_MrsBeanCafe.html" class="slideshow-link">
+        <div class="slideshow-container-homepage">
+            <div class="mySlides fade">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_slideshow.png" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_slideshow1.png" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_slideshow2.png" alt="Slide 3">
+            </div>
+        </div>
+    </a>
+
+    <div style="text-align: center">
+        <span class="dot-homepage" onclick="currentSlide(1)"></span>
+        <span class="dot-homepage" onclick="currentSlide(2)"></span>
+        <span class="dot-homepage" onclick="currentSlide(3)"></span>
+    </div>
+    
+
+    <br>
+
+    <div class="button-container-homepage">
+        <a href="Workshop_MrsBeanCafe.html" class="custom-button-homepage">Workshop Enrollment</a>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="concierge-video-container-homepage">
+        <div class="white-container2-homepage">
+            <!-- Concierge info content -->
+            <p>CONCIERGE: +65 6708 9288 / WHATSAPP</p>
+            <p>(Concierge Operating Hours: 10 am to 10 pm daily)</p>
+            <h2>The Heart of Chelsea</p>
+            <h4>Designed by Rockwell Group, TAO Downtown offers a distinct sense of arrival and discovery. It is the first TAO venue where guests descend into a multi-level space. The subterranean restaurant, located in the heart of Chelsea, is intended to look and feel as if it has been there for decades and only unearthed recently to reveal the artifacts within. Upon arrival, guests immediately encounter a long corridor with a dragon scale patterned screen and Chinese calligraphy murals mounted on weathered brick walls, creating a captivating and immersive ambiance.</h4>
+        </div>
+    
+        <div class="video-container-homepage">
+            <video id="customVideo-homepage" autoplay muted>
+                <source src="images/Images_MrsBeanCafe_HomePage/Homepage_video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
+
+    <div class="white-container-homepage">
+        <div class="small-images-container">
+            <img src="images/Images_MrsBeanCafe_HomePage/Homepage_small_image.png" alt="Image 1" class="small-image-homepage">
+            <img src="images/Images_MrsBeanCafe_HomePage/Homepage_small_image1.png" alt="Image 2" class="small-image-homepage">
+            <img src="images/Images_MrsBeanCafe_HomePage/Homepage_small_image2.png" alt="Image 3" class="small-image-homepage">
+            <img src="images/Images_MrsBeanCafe_HomePage/Homepage_small_image3.png" alt="Image 4" class="small-image-homepage">
+        </div>
+        <h1 style="font-size: 35px; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">MRS BEAN CAFE: A REFUGE FOR SOCIAL GATHERING</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          dolore iure ab veniam fugit perspiciatis dicta sapiente, eaque, velit
-          cupiditate consequuntur dolorum nobis vel. Consequatur voluptas
-          commodi omnis totam vero.
+            Mr Bean Cafe opened in 1999 as a cozy cafe hidden within Projectshop clothing store. This charming and understated spot quickly
+            gained a following for its hearty takes on savory cafe classics, famous truffle shoestring fries, and indulgent cakes.
+            Thoughtfully detailed interiors, lush surroundings, friendly relaxed service, and generous portions have made this homegrown
+            Singapore brand an internationally recognized local favorite. PS.Cafe is the place for legendary brunches and lazy
+            afternoon teas, romantic dates, and friendly celebrations in beautiful surroundings.
         </p>
-        <a href="#" class="button">Let's Go!</a>
-      </div>
-    </section>
-  </body>
+        <div class="grey-line-homepage"></div>
+        <h2>INSTAGRAM: @MRSBEANCAFE_NP</h2>
+        <div class="social-icons-homepage">
+            <a href="https://www.instagram.com/pscafe/" target="_blank">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/PS.Cafe/" target="_blank">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_icon1.png" alt="Facebook">
+            </a>
+            <a href="mailto:contact@pscafe.com">
+                <img src="images/Images_MrsBeanCafe_HomePage/Homepage_icon2.png" alt="Email">
+            </a>
+        </div>
+    </div>
+    
+
+    <footer>
+        <!-- footer content goes here -->
+        <p>MARINA BAY SANDS | 10 BAYFRONT AVENUE, SINGAPORE 018956 | HOTEL TOWER 1, LEVEL 57 SANDS SKYPARK</p>
+        <p>+65 6708 9288</p>
+        <p>MONDAY TO SUNDAY 12PM TO 12AM (MIDNIGHT)</p>
+        <p>&copy; 2023 Mrs Bean Cafe</p>
+    </footer>
+    
+    <script src="MrsBeanCafe.js"></script>
+</body>
+
 </html>
