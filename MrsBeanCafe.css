@@ -40,36 +40,60 @@ footer {
     font-size: 10px; /* Smaller font size */
 }
 
+@media (max-width: 700px) {
+    header {
+        text-align: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 30px; /* Add padding to adjust spacing */
+        min-height: 85px; /* Set desired minimum height */
+    }
+    
+
+    header h1 {
+        display: block; /* Ensure h1 is a block element */
+        font-size: 28px; /* Adjust the font size as needed */
+        margin-bottom: 10px; /* Add space between h1 and nav */
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center; /* Center the list items */
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 20px;
+    }
+
+    nav li {
+        display: block; /* Stack list items */
+        margin-bottom: 5px; /* Adjust the margin between list items */
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+
 /*-- End of shared header + body -----------------------------------------------------------------------------------------------------------------*/
 
 /*-- Start of Homepage css ---------------------------------------------------------------------------------------------------------------*/
-.slideshow-container {
+.slideshow-container-homepage {
     position: relative;
-    width: 900px; /* Set a fixed pixel value for the width */
-    max-height: 500px; /* Set the maximum height to ensure responsiveness */
-    margin: 0 auto; /* Center the slideshow container */
-    overflow: hidden; /* Hide overflowing content */
+    width: 100%;
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
     margin-top: 50px;
 }
 
-/* Style for the slideshow images */
-.slideshow-container img {
-    width: 100%; /* Use 100% width to fill the slideshow container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the entire container */
-}
-
-/* Add margin below the header and above the picture box */
-header + .picture-box {
-    margin-top: 20px;
-}
-
-.slideshow-container + .dot{
-    margin-bottom: 990px;
+.slideshow-container-homepage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Style for the dots/circles */
-.dot {
+.dot-homepage {
     height: 10px;
     width: 10px;
     margin: 0 2px;
@@ -80,17 +104,17 @@ header + .picture-box {
 }
 
 /* Active dot style */
-.dot.active {
+.dot-homepage.active {
     background-color: #717171;
 }
 
 /* Style for the custom button */
-.button-container {
+.button-container-homepage {
     text-align: center;
     margin-top: 20px;
 }
 
-.custom-button {
+.custom-button-homepage {
     display: inline-block;
     padding: 10px 20px;
     background-color: #906041;
@@ -101,12 +125,12 @@ header + .picture-box {
     text-decoration: none;
 }
 
-.custom-button:hover {
+.custom-button-homepage:hover {
     background-color: #ff8800;
 }
 
 /* Flex container for side-by-side layout --------------------*/
-.concierge-video-container {
+.concierge-video-container-homepage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -115,80 +139,122 @@ header + .picture-box {
 }
 
 /* Style for white-container2 */
-.white-container2 {
+.white-container2-homepage {
     background-color: #bfbfbf;
     padding: 20px;
     text-align: left;
-    box-sizing: border-box; /* Include padding and border in the total width */
+    box-sizing: border-box;
 }
 
-.white-container2 h2 {
+.white-container2-homepage h2 {
     font-size: 35px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.white-container2 h4 {
+.white-container2-homepage h4 {
     font-size: 20px;
     font-weight: unset;
 }
 
 /* Style for the video container */
-.video-container {
+.video-container-homepage {
     position: relative;
-    box-sizing: border-box; /* Include padding and border in the total width */
+    box-sizing: border-box;
 }
 
 /* Style for the video */
-#customVideo {
+#customVideo-homepage {
     width: 100%;
-    height: 100%; /* Set height to 100% */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%;
+    object-fit: cover;
 }
-/*-------------------------------------------------------------------------------------------------------------*/
+
 /* Style for white-container */
-.white-container {
+.white-container-homepage {
     background-color: #bfbfbf;
     padding: 20px;
     text-align: left;
-    margin: 20px 10px; /* Adjust margin as needed */
+    margin: 20px 10px;
 }
 
-.white-container h2 {
+.white-container-homepage h2 {
     font-size: 12px;
 }
 
-.small-image {
-    width: 100%; /* Take up 100% of the available width */
-    max-width: 270px; /* Set a maximum width if needed */
+.small-image-homepage {
+    width: 100%;
+    max-width: 270px;
     height: auto;
-    margin: 4px; /* Adjust the margin to make the gaps smaller */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-
+    margin: 4px;
+    box-sizing: border-box;
 }
 
-.white-container2 img {
-    justify-content: center;
-}
-
-.grey-line {
+.grey-line-homepage {
     width: 100%;
     height: 1px;
     background-color: hsl(0, 0%, 20%);
-    margin: 20px 0; /* Adjust the margin as needed */
+    margin: 20px 0;
 }
 
-.social-icons {
+.social-icons-homepage {
     margin-top: 20px;
-    padding: 10px; /* Adjust the padding to control the spacing between icons */
+    padding: 10px;
 }
-.social-icons a {
-    display: inline-block; /*If i dont put this i can see the underline link*/
-} 
-.social-icons img {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
+
+.social-icons-homepage a {
+    display: inline-block;
 }
+
+.social-icons-homepage img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 700px) {
+    .custom-button-homepage {
+        font-size: 13px;
+    }
+
+    .slideshow-container-homepage {
+        width: 100%;
+        height: auto;
+    }
+
+    .white-container-homepage,
+    .white-container2-homepage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .small-image-homepage {
+        width: 46%;
+    }
+
+    .grey-line-homepage {
+        text-align: center;
+    }
+
+    .grey-line-homepage h2,
+    .social-icons-homepage {
+        display: inline-block;
+        margin: 1px;
+    }
+
+    .concierge-video-container-homepage {
+        display: block;
+    }
+
+    .white-container2-homepage,
+    .video-container-homepage {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
 /*-- Start of Menu css--------------------------------------------------------------------------------------------------------------------*/
@@ -497,196 +563,65 @@ header + .picture-box {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsive styles for smaller screens */
-@media (max-width: 700px) {
-    header {
-        text-align: center;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        padding: 30px; /* Add padding to adjust spacing */
-        min-height: 85px; /* Set desired minimum height */
-    }
-    
-
-    header h1 {
-        display: block; /* Ensure h1 is a block element */
-        font-size: 28px; /* Adjust the font size as needed */
-        margin-bottom: 10px; /* Add space between h1 and nav */
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        text-align: center; /* Center the list items */
-        font-size: 15px;
-        font-family: 'Courier New', Courier, monospace;
-        margin-left: 20px;
-    }
-
-    nav li {
-        display: block; /* Stack list items */
-        margin-bottom: 5px; /* Adjust the margin between list items */
-    }
-
-    .custom-button {
-        font-size: 13px;
-    }
-
-    .video-container,
-    .white-container,
-    .white-container2 {
-        width: 100%;
-        max-width: fit-content;
-    }
-
-    .slideshow-container {
-        width: 100%;
-        height: auto;
-    }
-
-    .white-container {
-        display: flex;
-        justify-content: center; /* Center the items horizontally */
-        align-items: center; /* Center the items vertically */
-        flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
-    }
-
-    .small-image {
-        width: 46%; /* Set the width for a 2x2 grid */
-    }
-    
-    .grey-line {
-        text-align: center;
-    }
-    
-    .grey-line h2,
-    .social-icons {
-        display: inline-block;
-        margin: 1px; /* making them aligned */
-    }
-
-    footer {
-        font-size: 10px;
-    }
+/*-- Start of Deals css--------------------------------------------------------------------------------------------------*/
+.limited-time-deals {
+    text-align: center; /* Center the text */
+    background-color: #dfba25; /* Add a background color */
+    padding: 10px; /* Add some padding for better visibility */
+    margin: 20px 0; /* Add margin to create space around the section */
+    color: #333; /* Set the text color */
+    font-size: 22px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
 }
-
-
-
-/* Responsive styles for smaller screens */
-@media (min-width: 701px) and (max-width: 1000px) {
-    .header {
-        background-color: #333; /* Background color for the header */
-        color: #fff; /* Text color for the header */
-        padding: 40px; /* Add padding to adjust spacing around header content */
-        height: 60px; /* Set the height of the header */
-    }
-
-    
-    nav ul {
-        gap: 50px; /* Adjust the gap between menu items */
-        font-size: 20px; /* Set the font size for navigation items */
-        font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
-        margin-right: 20px; /* Add margin to the right of the navigation */
-    }
-
-    .video-container,
-    .white-container,
-    .white-container2 {
-        width: 100%;
-        max-width:fit-content;
-    }
-
-    .slideshow-container {
-        width: 100%;
-    }
-
-    .slideshow-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    .white-container {
-        display: flex;
-        justify-content: center; /* Center the items horizontally */
-        align-items: center; /* Center the items vertically */
-        flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
-    }
-
-    .small-image {
-        margin: 5px; /* Adjust the margin as needed */
-    }
-    
-    .grey-line {
-        text-align: center;
-    }
-    
-    .grey-line h2,
-    .social-icons {
-        display: inline-block;
-        margin: 20px; /* making them aligned */
-        padding-left: 80px; /* Adjust the padding as needed */
-    }
+.button-container-deals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns in the grid */
+    gap: 20px;
+    margin: 20px;
+}
+.button-deals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to distribute content evenly */
+    text-align: center;
+    background-color: #bfbfbf;
+    padding: 20px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+.button-deals:hover {
+    transform: scale(1.05);
+}
+.button-deals img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 250px; /* Set the maximum height for the images */
+}
+.body-content-deals {
+    max-width: 600px;
+}
+.body-content-deals h1 {
+    font-size: 30px;
+    margin-bottom: 10px; /* Adjusted margin */
+}
+.body-content-deals p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.button-link-deals {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px; /* Add margin at the top */
+}
+.button-link-deals:hover {
+    background-color: #ff8800;
 }
