@@ -2,7 +2,20 @@
 This is my FED1 assignment project
 
 Idea:
+1: User Audience and Intent Purpose:
 
+This front-end development project focuses on creating the Mrs Bean Cafe website, tailored for coffee enthusiasts and families in search of unique culinary experiences. The primary goal of this immersive online space is not only to inform users but also to captivate their interest. Through detailed workshops, the website provides profound insights into the intricate world of coffee, inviting both coffee aficionados and families of all ages, seeking good food or enriching activities. The neutral color palette chosen for the website aims to establish a warm and inviting gateway, introducing users to the cafe's ambiance.
+
+Users visiting the website will have the opportunity to make informed decisions about whether to explore our food offerings or participate in our engaging workshops. The design and content are strategically crafted to appeal to both culinary enthusiasts looking for a delightful dining experience and families seeking enriching activities, creating a platform that caters to a diverse audience with varied interests.
+
+2: Who the Website is For and Value Provided to Users:
+Mrs Bean Cafe was created with the aim of attracting a diverse group of users. The first group consists of coffee enthusiasts who are keen to explore what they might learn in our workshops led by expert baristas. The second group includes families seeking culinary experiences. For them, we offer a family-friendly menu and enriching activities suitable for all ages. The website is not just about delicious food; it also aims to build a community among people who share similar interests. Additionally, we provide exclusive flash deals on both workshops and food items to make the experience at Mrs Bean Cafe more appealing for our users. Overall, the goal of this website is to offer something special for every visitors to Mrs Bean Cafe.
+
+3: What the Website is Catering For:
+-Designed with a goal to appeal to broad spectrum of users.
+-Workshops led by expert baristas providing in depth insights into the world of coffee.
+-Families who are seeking for culinary experiences.
+-Exclusive flash deals on both workshops and food items.
 
 References:
 https://derkern.miele.co.uk/files/Workshop_Coffee1.JPG

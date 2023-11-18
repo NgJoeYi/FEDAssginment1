@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Mrs Bean Cafe</title>
+    <title>Mrs Bean Cafe</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="MrsBeanCafe.css">
 </head>
 
@@ -23,329 +23,170 @@
         </nav>
     </header>
 
-    <div class="image-container">
-        <img src="images//Images_MrsBeanCafe_Menupage/menu_img1.png" alt="Image 1">
-        <img src="images/Images_MrsBeanCafe_Menupage/menu_img2.png" alt="Image 2">
-        <img src="images/Images_MrsBeanCafe_Menupage/menu_img3.png" alt="Image 3">
-    </div>
+    <div class="menu">
+        <h2>Menu</h2>
 
+        <div class="menu-category">
+            <h3>Breakfast</h3>
+        </div>
 
-<!-- BREAKFAST ---------------------------------------------------------------->
-    <div class="menu-header">
-        <h2>Our Menu</h2>
-        <h4>Breakfast 8am – 3pm</h4>
-    </div>
-    <div id="cart-container" class="cart-container">
-        <div id="cart" class="cart">
-            <div class="cart-header">
-                <h2>Your Cart</h2>
-                <span id="close-cart">&times;</span>
+        <div class="white-container-menupage">
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Galactic Pancake Delight</p>
+                    <p class="item-price">$9.99</p>
+                    <p class="item-description">Fluffy pancakes topped with stardust syrup and cosmic berries</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Galactic Pancake Image" class="item-image">
             </div>
-            <div id="cart-items" class="cart-items">
-                <!-- Cart items will be added dynamically here -->
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Unicorn Waffle Extravaganza</p>
+                    <p class="item-price">$12.99</p>
+                    <p class="item-description">Magical waffles with rainbow sprinkles and enchanted maple syrup</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Unicorn Waffle Image" class="item-image">
             </div>
-            <button id="checkout-button" class="checkout-button">Checkout</button>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Solar Eclipse Omelette</p>
+                    <p class="item-price">$11.99</p>
+                    <p class="item-description">Three-egg omelette with a swirl of dark and light ingredients</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Nebula Smoothie Bowl</p>
+                    <p class="item-price">$10.99</p>
+                    <p class="item-description">Acai bowl with a galaxy of fresh fruits and granola</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Milky Way French Toast</p>
+                    <p class="item-price">$14.99</p>
+                    <p class="item-description">Cinnamon French toast served with a drizzle of Milky Way sauce</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Lunch</h3>
+        </div>
+
+        <div class="white-container-menupage">
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Dragon Breath Burrito</p>
+                    <p class="item-price">$14.99</p>
+                    <p class="item-description">Spicy burrito filled with fire-roasted vegetables and dragon salsa</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="cart logo Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Meteorite Tacos</p>
+                    <p class="item-price">$13.99</p>
+                    <p class="item-description">Soft tacos filled with meteorite-seasoned protein and cosmic slaw</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Interstellar Salad Bowl</p>
+                    <p class="item-price">$15.99</p>
+                    <p class="item-description">Fresh greens with celestial veggies and quinoa, topped with a starry vinaigrette</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Alien Invasion Pizza</p>
+                    <p class="item-price">$17.99</p>
+                    <p class="item-description">Pizza with otherworldly toppings and an extraterrestrial tomato sauce</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Alien Invasion Pizza Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Galactic Wrap</p>
+                    <p class="item-price">$16.99</p>
+                    <p class="item-description">Wrap filled with cosmic flavors and a hint of intergalactic spice</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Dinner</h3>
+        </div>
+
+        <div class="white-container-menupage">
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Enchanted Forest Risotto</p>
+                    <p class="item-price">$18.99</p>
+                    <p class="item-description">Creamy risotto with wild mushrooms and fairy-tale herbs</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="cart logo Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Supernova Sushi Platter</p>
+                    <p class="item-price">$22.99</p>
+                    <p class="item-description">Assorted sushi rolls inspired by exploding stars and cosmic elements</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Galactic Gourmet Burger</p>
+                    <p class="item-price">$20.99</p>
+                    <p class="item-description">Gourmet burger with a constellation of premium toppings</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Celestial Pasta Extravaganza</p>
+                    <p class="item-price">$24.99</p>
+                    <p class="item-description">Pasta dish with a medley of celestial ingredients and heavenly flavors</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-content">
+                    <p class="item-name">Starlight Surf and Turf</p>
+                    <p class="item-price">$28.99</p>
+                    <p class="item-description">Surf and turf dish with a starlight glaze, served with cosmic potatoes</p>
+                </div>
+                <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Milky Way French Toast Image" class="item-image">
+            </div>
         </div>
     </div>
 
-    <div class="white-container">
-        <div class="breakfast">
-            <!-- Existing menu item -->
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>HOMEMADE BANANA BREAD (V)</h3>
-                        <p>Toasted & served with Gula Melaka Cream</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$7</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <!-- logo and functionality for adding to cart can go here -->
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Homemade Banana Bread" data-item-price="7.00">
-                </div>
-            </div>
-
-            <!-- New menu items -->
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>AVOCADO TOAST (V)</h3>
-                        <p>Smashed avocado, cherry tomatoes, and feta on whole-grain toast</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$10</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Avocado Toast" data-item-price="10.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>OMELETTE</h3>
-                        <p>Three-egg omelette with mushrooms, spinach, and cheese</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$13</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Omelette" data-item-price="13.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>SMOKED SALMON BAGEL</h3>
-                        <p>Bagel with smoked salmon, cream cheese, red onion, and capers</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$15</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Smoked Salmon Bagel" data-item-price="15.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>GREEK YOGURT PARFAIT (V)</h3>
-                        <p>Greek yogurt with mixed berries, honey, and granola</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$8</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Greek Yogurt Parfait" data-item-price="8.00">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-<!-- LUNCH ---------------------------------------------------------------->
-    <div class="menu-header">
-        <h4>Lunch 11am – 3pm</h4>
-    </div>
-
-
-    <div id="cart-container" class="cart-container">
-        <div id="cart" class="cart">
-            <div class="cart-header">
-                <h2>Your Cart</h2>
-                <span id="close-cart">&times;</span>
-            </div>
-            <div id="cart-items" class="cart-items">
-                <!-- Cart items will be added dynamically here -->
-            </div>
-            <button id="checkout-button" class="checkout-button">Checkout</button>
-        </div>
-    </div>
-    
-    <div class="white-container">
-        <div class="lunch">
-            <!-- Lunch menu items -->
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>CHICKEN CAESAR SALAD</h3>
-                        <p>Romaine lettuce, grilled chicken, croutons, parmesan cheese, and Caesar dressing</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$12</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <!-- Logo and functionality for adding to cart can go here -->
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Chicken Caesar Salad" data-item-price="12.00">
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>GRILLED VEGGIE WRAP (V)</h3>
-                        <p>Grilled vegetables, hummus, and feta cheese wrapped in a tortilla</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$9</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Grilled Veggie Wrap" data-item-price="9.00">
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>PENNE PASTA PRIMAVERA (V)</h3>
-                        <p>Penne pasta with mixed vegetables in a light tomato sauce</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$11</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Penne Pasta Primavera" data-item-price="11.00">
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>CLASSIC BEEF BURGER</h3>
-                        <p>Beef patty, lettuce, tomato, onion, and cheese on a sesame seed bun</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$14</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Classic Beef Burger" data-item-price="14.00">
-                </div>
-            </div>
-    
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>SPINACH AND FETA STUFFED CHICKEN</h3>
-                        <p>Chicken breast stuffed with spinach and feta, served with mashed potatoes</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$16</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Spinach and Feta Stuffed Chicken" data-item-price="16.00">
-                </div>
-            </div>
-        </div>
-    </div>
- 
-<!-- DINNER ------------------------------------------------------------------>>
-    <div class="menu-header">
-        <h4>Dinner 5pm – 11pm</h4>
-    </div>
-
-    <div id="cart-container" class="cart-container">
-        <div id="cart" class="cart">
-            <div class="cart-header">
-                <h2>Your Cart</h2>
-                <span id="close-cart">&times;</span>
-            </div>
-            <div id="cart-items" class="cart-items">
-                <!-- Cart items will be added dynamically here -->
-            </div>
-            <button id="checkout-button" class="checkout-button">Checkout</button>
-        </div>
-    </div>
-
-    <div class="white-container">
-        <div class="dinner">
-            <!-- Dinner menu items -->
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>GRILLED SALMON</h3>
-                        <p>Grilled salmon fillet with lemon butter sauce, served with roasted vegetables</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$18</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <!-- Logo and functionality for adding to cart can go here -->
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Grilled Salmon" data-item-price="18.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>LOBSTER RAVIOLI</h3>
-                        <p>Homemade lobster-filled ravioli with creamy tomato basil sauce</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$22</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Lobster Ravioli" data-item-price="22.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>FILET MIGNON</h3>
-                        <p>Grilled filet mignon steak with red wine reduction, served with garlic mashed potatoes</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$26</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Filet Mignon" data-item-price="26.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>VEGETARIAN LASAGNA (V)</h3>
-                        <p>Layered pasta with ricotta, spinach, and marinara sauce, topped with melted mozzarella</p>
-                    </div>
-                    <div class = "item-price">
-                        <p>$16</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Vegetarian Lasagna" data-item-price="16.00">
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <div class="item-content">
-                    <div class="item-name">
-                        <h3>SURF AND TURF</h3>
-                        <p>Grilled sirloin steak paired with buttery shrimp, served with seasoned vegetables</p>
-                    </div>
-                    <div class="item-price">
-                        <p>$24</p>
-                    </div>
-                </div>
-                <div class="add-to-cart">
-                    <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Add to Cart" class="cart-logo" data-item-name="Surf and Turf" data-item-price="24.00">
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- BUTTONS -->
-    <div class="additional-section">
-        <h2>Explore More</h2>
-        <p>Discover our special events and promotions. Join us for an unforgettable dining experience.</p>
-        <a href="Deals_MrsBeanCafe.html"> CHECK OUT DETAILS</a>
-    </div>
-
-<!-- FOOTER ----------------------------------------------------------------------->
     <footer>
+        <!-- footer content goes here -->
         <p>MARINA BAY SANDS | 10 BAYFRONT AVENUE, SINGAPORE 018956 | HOTEL TOWER 1, LEVEL 57 SANDS SKYPARK</p>
         <p>+65 6708 9288</p>
         <p>MONDAY TO SUNDAY 12PM TO 12AM (MIDNIGHT)</p>
         <p>&copy; 2023 Mrs Bean Cafe</p>
     </footer>
-
-    <script src="MrsBeanCafe.js"></script>
 </body>
 
 </html>
