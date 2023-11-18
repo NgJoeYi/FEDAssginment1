@@ -1,4 +1,4 @@
-/* -- shared header ----------------------------------------------------- */
+/* -- shared header ----------------------------------------------------------------------------------------------------------------------- */
 .header {
     background-color: #333; /* Background color for the header */
     color: #fff; /* Text color for the header */
@@ -40,9 +40,9 @@ footer {
     font-size: 10px; /* Smaller font size */
 }
 
-/*-- End of shared header + body ---------------------------------------------------------------*/
+/*-- End of shared header + body -----------------------------------------------------------------------------------------------------------------*/
 
-/*-- Start of Homepage css ---------------------------------------------------------------------*/
+/*-- Start of Homepage css ---------------------------------------------------------------------------------------------------------------*/
 .slideshow-container {
     position: relative;
     width: 900px; /* Set a fixed pixel value for the width */
@@ -105,7 +105,7 @@ header + .picture-box {
     background-color: #ff8800;
 }
 
-/* Flex container for side-by-side layout --------------------------------------------------------------------------------*/
+/* Flex container for side-by-side layout --------------------*/
 .concierge-video-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -189,9 +189,9 @@ header + .picture-box {
     width: 30px; /* Adjust the width as needed */
     height: 30px; /* Adjust the height as needed */
 }
-/*-- End of Homepage css ----------------------------------------------------------------*/
+/*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
-/*-- Start of Menu css-------------------------------------------------------------------*/
+/*-- Start of Menu css--------------------------------------------------------------------------------------------------------------------*/
 
 .image-container {
     display: flex;
@@ -335,7 +335,167 @@ header + .picture-box {
     background-color: #ff8800;
 }
 
+/*-- Start of Workshop css ----------------------------------------------------------------------------------------------------------*/
+.image-overlay img {
+    width: 95%;
+    height: auto;
+    max-height: 500px; /* Set the desired height in pixels or another unit */
+    object-fit: cover;
+}
 
+/*for my overlay text on top of my top image*/
+.overlay-content {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    font-style: bold;
+}
+
+.text-overlay h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.text-box {
+    padding: 20px; /* Adjust the padding as needed */
+    text-align: center; /* Adjust text alignment within the box */
+    color: #fff;
+    width: 600px;
+    margin: 20px auto; /* Center the box horizontally */
+}
+
+.text-box h3 {
+    font-size: 20px; /* Adjust the font size as needed */
+}
+/*----------------------------------------------------------------------------------------*/
+.image-under-text {
+    display: flex;
+}
+
+.overlay-content {
+    position: relative;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.overlay-content img {
+    max-width: 90%; /* Make the image responsive */
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.overlay-text p {
+    font-size: 16px;
+}
+
+/* Style for the custom button */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    background-color: #ff8800;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.gray-text-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #bfbfbf; /* Gray background color */
+    padding: 20px; /* Adjust the padding as needed */
+    color: #000000; /* Text color */
+}
+
+.gray-text-box img {
+    margin-right: 100px;
+    max-width: 30%; /* Make the image responsive */
+    height: auto;
+}
+
+.gray-text-box h1{
+    font-size: 45px;
+}
+
+.gray-text-box h3 {
+    font-size: 20px;
+    font-family: monospace; /* Use font-family to set the font */
+    letter-spacing: 7px; /* Adjust the value to control the spacing */
+}
+
+.gray-text-box p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.machine-content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.machine-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.machine-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.machine-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.machine-content img {
+    width: 60%;
+    height: 400px; /* Set a fixed height as needed */
+    object-fit: cover; /* This property ensures the image covers the container while maintaining its aspect ratio */
+    margin-bottom: 10px;
+}
 
 
 
