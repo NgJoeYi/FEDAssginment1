@@ -460,7 +460,7 @@ footer {
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255) ;
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .text-overlay h1 {
