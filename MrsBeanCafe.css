@@ -265,53 +265,11 @@ footer {
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
 /*-- Start of Menu css--------------------------------------------------------------------------------------------------------------------*/
-.image-container-menupage {
-    display: flex;
-    justify-content: space-between;
-    /* creates equal space between the items, pushing the first item to the start and the last item to the end. */
-    margin-top: 20px;
-}
-
-.image-container-menupage img {
-    max-width: 33.33%; /* Adjust the width of each image */
-    height: auto;
-}
-
 .menu-category {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
     text-align: center;
-    margin-bottom: 20px;
+    color: #fff;
+    font-size: 30px;
 }
-
-.white-container-menupage {
-    background-color: rgb(195, 194, 194);
-    padding: 40px;
-    margin: 20px 0;
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-item img {
-    margin-left: auto; /* Align the image to the right within the container */
-    max-width: 40px; /* Set the maximum width to control the size */
-    height: auto;
-    object-fit: contain; /* Maintain the aspect ratio without stretching */
-}
-
-@media (max-width: 600px) {
-    /* removing these pictures to have a nicer interface */
-    .image-container-menupage img:nth-child(2),
-    .image-container-menupage img:nth-child(3),
-    .image-container-menupage img:nth-child(1) {
-        display: none;
-    }
-}
-
 /*-- End of menu css ----------------------------------------------------------------------------------------------------*/
 
 /*-- Start of Workshop css ----------------------------------------------------------------------------------------------------------*/

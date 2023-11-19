@@ -12,10 +12,10 @@ Users visiting the website will have the opportunity to make informed decisions 
 Mrs Bean Cafe was created with the aim of attracting a diverse group of users. The first group consists of coffee enthusiasts who are keen to explore what they might learn in our workshops led by expert baristas. The second group includes families seeking culinary experiences. For them, we offer a family-friendly menu and enriching activities suitable for all ages. The website is not just about delicious food; it also aims to build a community among people who share similar interests. Additionally, we provide exclusive flash deals on both workshops and food items to make the experience at Mrs Bean Cafe more appealing for our users. Overall, the goal of this website is to offer something special for every visitors to Mrs Bean Cafe.
 
 3: What the Website is Catering For:
--Designed with a goal to appeal to broad spectrum of users.
--Workshops led by expert baristas providing in depth insights into the world of coffee.
--Families who are seeking for culinary experiences.
--Exclusive flash deals on both workshops and food items.
+HOMEPAGE (index.html) - As the front end developer of Mrs Bean's Cafe, my primary focus is on crafting a captivating first impression for users. The homepage seamlessly integrates an array of tempting food items and showcases the variety of workshops we offer. Additionally, strategic placement of buttons facilitates user navigation, guiding them to explore other pages, contact details, and our social media presence.
+I have also ensured for a responsive design by adjusting the dimensions of elements such as the slideshow video and small food item images. The objective is to engage users instantly, fostering their interest and prompting them to delve deeper into the website. A swift glance at the homepage should ideally inspire users to plan a visit or continue their exploration of our content.
+
+MENU PAGE (Menu_MrsBeanCafe.html) - My goal of this website is 
 
 References:
 https://derkern.miele.co.uk/files/Workshop_Coffee1.JPG
