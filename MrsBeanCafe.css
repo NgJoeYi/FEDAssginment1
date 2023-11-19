@@ -186,6 +186,12 @@ footer {
         10px: This sets the right and left margins to 10 pixels. */ 
 }
 
+.white-container-homepage h1 {
+    font-size: 35px; 
+    font-weight: bold; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .white-container-homepage h2 {
     font-size: 12px;
 }
