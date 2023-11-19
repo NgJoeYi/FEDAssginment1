@@ -50,3 +50,12 @@ https://babachews.com.sg/wp-content/uploads/2023/10/1536-x-2048-Bundle-Promo.jpg
 https://babachews.com.sg/wp-content/uploads/2023/07/Baba-Chews-Wine-Promotions-July.jpg
 https://babachews.com.sg/wp-content/uploads/2023/07/Baba-Chews-Gin-Promotions-July.jpg
 https://babachews.com.sg/wp-content/uploads/2023/05/1.-Nyonya-Margarita-scaled.jpg
+
+External source code:
+https://www.w3schools.com/CSSref/sel_nth-child.php
+https://www.w3schools.com/CSSref/sel_hover.php
+https://www.w3schools.com/cssref/pr_grid-template-columns.php
+https://www.w3schools.com/cssref/pr_dim_min-height.php
+https://www.w3schools.com/csS/css3_object-fit.asp
+https://www.w3schools.com/cssref/css3_pr_justify-content.php
+https://www.w3schools.com/Css/css_text_decoration.asp

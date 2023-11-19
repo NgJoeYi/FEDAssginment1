@@ -46,7 +46,8 @@ footer {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
         padding: 30px; /* Add padding to adjust spacing */
-        min-height: 85px; /* Set desired minimum height */
+        min-height: 85px; /* If the content is smaller than the minimum height, the minimum height will be applied.
+                            If the content is larger than the minimum height, the min-height property has no effect. */
     }
     
 
@@ -58,7 +59,7 @@ footer {
 
     nav ul {
         list-style: none;
-        padding: 0;
+        padding: 0; /* remove padding on left, right, top, bottom */
         text-align: center; /* Center the list items */
         font-size: 15px;
         font-family: 'Courier New', Courier, monospace;
@@ -172,7 +173,7 @@ footer {
 #customVideo-homepage {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* scales the content to maintain its aspect ratio while completely covering the entire container. */
 }
 
 /* Style for white-container */
@@ -181,6 +182,8 @@ footer {
     padding: 20px;
     text-align: left;
     margin: 20px 10px;
+    /* 20px: This sets the top and bottom margins to 20 pixels.
+        10px: This sets the right and left margins to 10 pixels. */ 
 }
 
 .white-container-homepage h2 {
@@ -188,7 +191,6 @@ footer {
 }
 
 .small-image-homepage {
-    width: 100%;
     max-width: 270px;
     height: auto;
     margin: 4px;
@@ -200,6 +202,7 @@ footer {
     height: 1px;
     background-color: hsl(0, 0%, 20%);
     margin: 20px 0;
+    /* need the 0 for left and right because i need it to be in the middle */
 }
 
 .social-icons-homepage {
@@ -255,7 +258,6 @@ footer {
     .white-container2-homepage,
     .video-container-homepage {
         width: 100%;
-        margin-right: 0;
         margin-top: 20px;
     }
 }
@@ -266,6 +268,7 @@ footer {
 .image-container-menupage {
     display: flex;
     justify-content: space-between;
+    /* creates equal space between the items, pushing the first item to the start and the last item to the end. */
     margin-top: 20px;
 }
 
@@ -301,6 +304,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+    /* removing these pictures to have a nicer interface */
     .image-container-menupage img:nth-child(2),
     .image-container-menupage img:nth-child(3),
     .image-container-menupage img:nth-child(1) {
@@ -314,7 +318,7 @@ footer {
 .image-overlay img {
     width: 95%;
     height: auto;
-    max-height: 500px; /* Set the desired height in pixels or another unit */
+    max-height: 500px; 
     object-fit: cover;
 }
 
@@ -561,14 +565,13 @@ footer {
     color: #fff;
     transition: transform 0.3s ease;
     margin-bottom: 20px;
-    box-sizing: border-box;
-    max-width: 300px; /* Set your desired max-width */
+    box-sizing: border-box; /* Specifies how the box model should be calculated. */
+    max-width: 300px; 
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Deal button hover effect */
@@ -612,7 +615,7 @@ footer {
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none;  /* remove underline */
     margin-top: 10px;
 }
 
@@ -624,6 +627,6 @@ footer {
 /* Media queries for responsiveness */
 @media (max-width: 700px) {
     .button-container-deals {
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    }
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
+    } /* sets the grid to have as many columns as can fit in the container, each with a minimum width of 100%. */
 }
