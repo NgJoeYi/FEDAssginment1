@@ -84,19 +84,23 @@ footer {
 
 /*-- Start of Homepage css ---------------------------------------------------------------------------------------------------------------*/
 .slideshow-container-homepage {
-    position: relative;
+    position: relative; /* by order */
     width: 100%;
     max-height: 500px;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 50px;
+    margin: 10px;
 }
 
 .slideshow-container-homepage img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
     height: auto;
     object-fit: cover;
 }
+
 
 /* Style for the dots/circles */
 .dot-homepage {
