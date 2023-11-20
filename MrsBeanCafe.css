@@ -84,7 +84,7 @@ footer {
 
 /*-- Start of Homepage css ---------------------------------------------------------------------------------------------------------------*/
 .slideshow-container-homepage {
-    position: relative; /* by order */
+    position: relative;
     width: 100%;
     max-height: 500px;
     margin: 0 auto;
@@ -95,9 +95,8 @@ footer {
 .slideshow-container-homepage img {
     display: block;
     margin: 0 auto;
-    width: 80%;
-    max-width: 100%; /* Ensure the image doesn't exceed its original size */
-    height: auto;
+    width: 80%; /* Set your desired width */
+    height: auto; /* Set your desired height */
     object-fit: cover;
 }
 
