@@ -270,67 +270,75 @@
         <p>&copy; 2023 Mrs Bean Cafe</p>
     </footer>
 
-    <div id="cart-container">
-        <div id="cart-content">
+    <div class="cart-container">
+        <div class="cart-heading">Your Cart</div> <!-- need use a different class here since it is associated to menu items name and price -->
+        <div class="cart-content">
             <!-- Cart content will be dynamically updated here -->
         </div>
-        <div id="total-price">Total: $0.00</div>
-        <button id="close-cart-btn" onclick="closeCart()">Close Cart</button>
+        <div class="total-price">Total: $0.00</div>
+        <button class="check-close-cart-btn" onclick="checkout()">Checkout</button>
+        <button class="check-close-cart-btn" onclick="closeCart()">Close Cart</button>
     </div>
     
-
-<script>
-    var cart = [];
-
-    function updateCartDisplay() {
-        console.log("Cart updated:", cart);
-        // Update the cart content in the UI (you can customize this part)
-        var cartContent = document.getElementById('cart-content');
-        cartContent.innerHTML = ''; // Clear previous content
-
-        // Add each item to the cart content
-        cart.forEach(function (item) {
-            var itemElement = document.createElement('div');
-            itemElement.textContent = item.name + ' - $' + item.price.toFixed(2);
-            cartContent.appendChild(itemElement);
-        });
-
-        // Calculate the total price
-        var totalPrice = cart.reduce(function (sum, item) {
-            return sum + item.price;
-        }, 0).toFixed(2);
-
-        // Update the total price element
-        var totalPriceElement = document.getElementById('total-price');
-        totalPriceElement.textContent = 'Total: $' + totalPrice;
-    }
-
-    function addToCart(button) {
-        var parentElement = button.parentElement;
-        var foodName = parentElement.querySelector('.food-name').textContent;
-        var foodPrice = parseFloat(parentElement.querySelector('.food-price').textContent.replace('$', ''));
-        var item = {
-            name: foodName,
-            price: foodPrice
-        };
-        cart.push(item);
-
-        // No alert here
-
-        updateCartDisplay();
-        slideOutCart(); // Call the function to slide out the cart
-    }
-
-    function slideOutCart() {
-        var cartContainer = document.getElementById('cart-container');
-        cartContainer.style.right = '0';
-    }
-
-    function closeCart() {
-        var cartContainer = document.getElementById('cart-container');
-        cartContainer.style.right = '-300px'; // Hide the cart off-screen
-    }
-</script>
+    <script>
+        var cart = [];
+    
+        function updateCartDisplay() {
+            console.log("Cart updated:", cart);
+            // Update the cart content in the UI (you can customize this part)
+            var cartContent = document.querySelector('.cart-content');
+            cartContent.innerHTML = ''; // Clear previous content
+    
+            // Add each item to the cart content
+            cart.forEach(function (item) {
+                var itemElement = document.createElement('div');
+                itemElement.textContent = item.name + ' - $' + item.price.toFixed(2);
+                cartContent.appendChild(itemElement);
+            });
+    
+            // Calculate the total price
+            var totalPrice = cart.reduce(function (sum, item) {
+                return sum + item.price;
+            }, 0).toFixed(2);
+    
+            // Update the total price element
+            var totalPriceElement = document.querySelector('.total-price');
+            totalPriceElement.textContent = 'Total: $' + totalPrice;
+        }
+    
+        function addToCart(button) {
+            var parentElement = button.parentElement;
+            var foodName = parentElement.querySelector('.food-name').textContent;
+            var foodPrice = parseFloat(parentElement.querySelector('.food-price').textContent.replace('$', ''));
+            var item = {
+                name: foodName,
+                price: foodPrice
+            };
+            cart.push(item);
+    
+            // No alert here
+    
+            updateCartDisplay();
+            slideOutCart(); // Call the function to slide out the cart
+        }
+    
+        function slideOutCart() {
+            var cartContainer = document.querySelector('.cart-container');
+            cartContainer.style.right = '0';
+        }
+    
+        function closeCart() {
+            var cartContainer = document.querySelector('.cart-container');
+            cartContainer.style.right = '-300px'; // Hide the cart off-screen
+        }
+    
+        function checkout() {
+            alert("Thank you for your purchase!");
+            closeCart();
+        }
+    </script>
+    
+    
 
     
     
