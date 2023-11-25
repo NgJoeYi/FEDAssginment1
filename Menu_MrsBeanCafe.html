@@ -335,7 +335,13 @@
         function checkout() {
             alert("Thank you for your purchase!");
             closeCart();
+            clearCart();
         }
+
+        function clearCart() {
+        cart = []; // Reset the cart to an empty array
+        updateCartDisplay(); // Update the display to reflect the empty cart
+    }
     </script>
     
     
