@@ -20,9 +20,9 @@ nav a {
     text-decoration: none; /* Remove link underlines */
     color: #ffffff; /* Set the text color for navigation links */
     transition: color 0.3s ease; /* Add a smooth color transition on hover */
-}
-nav a:hover {
-    color: #ffd700; /* Change the color on hover */
+    &:hover {
+        color: #ff8800; /* Change the color on hover */
+    }
 }
 body {
     background-image: url('images/chosen_cafe_image-overlayed.png');
@@ -141,10 +141,9 @@ footer {
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
-}
-
-.custom-button-homepage:hover {
-    background-color: #ff8800;
+    &:hover {
+        background-color: #ff8800
+    }
 }
 
 /* Flex container for side-by-side layout --------------------*/
@@ -295,12 +294,70 @@ footer {
     gap: 20px;
     margin: 20px;
 }
+.body-content-menu {
+    color: #000000;
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 700px) {
     .button-container-menu {
         grid-template-columns: repeat(2, 1fr); /* Set the grid to two columns when the screen is 700px or smaller (2)*/
+        font-size: 12px;
+    }
+    .button-container-menu h1 {
+        font-size: 20px;
+        margin: 5px;
     }
 }
+
+#cart-container {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f5f5f5; /* Greyish-white background */
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    border-left: 2px solid #333; /* Black border on the left for separation */
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-content {
+    flex: 1;
+    padding: 20px;
+}
+
+#cart-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#close-cart-btn {
+    background-color: #333;
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    &:hover {
+        background-color: #555
+}
+}
+
+#total-price {
+    margin-left: 10px;
+}
+
 
 /*-- End of menu css ----------------------------------------------------------------------------------------------------*/
 
@@ -399,11 +456,10 @@ footer {
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
+    &:hover {
+        background-color: #ff8800
 }
 
-.custom-button:hover {
-    background-color: #ff8800;
-}
 
 /*----------------------------------------------------------------------------------------*/
 .gray-text-box {
@@ -466,6 +522,27 @@ footer {
     margin-bottom: 10px;
 }
 
+.button-container {
+    text-align: center; /* Center the button within its container */
+}
+
+.button-link-menu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #906041;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect for background color */
+
+    /* Additional styles for hover effect */
+    &:hover {
+        background-color: #ff8800; /* Change background color on hover */
+    }
+}
+
 @media (max-width: 600px) {
 
     .image-overlay img {
@@ -517,7 +594,12 @@ footer {
     }
 
     .custom-button {
-        font-size: 13px;
+        font-size: 10px; /* Adjusted font size for better visibility on small screens */
+        width: 40%; /* Allow the button to expand to fit the content */
+        text-align: center; /* Center the text */
+        display: block; /* Make it a block-level element to center the text */
+        margin: 0 auto; /* Center the block */
+        padding: 8px 12px; /* Adjusted padding for better appearance */
     }
 
 }
@@ -562,11 +644,9 @@ footer {
     margin-right: auto;
     border-radius: 8px;
     overflow: hidden;
-}
-
-/* Deal button hover effect */
-.button-deals:hover {
-    transform: scale(1.05);
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 /* Image inside the deal button */
@@ -582,6 +662,7 @@ footer {
 /* Body content inside the deal button */
 .body-content-deals {
     max-width: 100%;
+    color: #000000;
 }
 
 /* Heading inside the deal button */
@@ -607,11 +688,10 @@ footer {
     font-weight: bold;
     text-decoration: none;  /* remove underline */
     margin-top: 10px;
-}
-
-/* Button hover effect */
-.button-link-deals:hover {
-    background-color: #ff8800;
+    &:hover {
+        background-color: #ff8800; /* Change background color on hover */
+    }
+    
 }
 
 /* Media queries for responsiveness */
