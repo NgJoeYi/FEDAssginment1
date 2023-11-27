@@ -1,21 +1,41 @@
 /* -- shared header ----------------------------------------------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/chosen_cafe_image-overlayed.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+.container {
+    justify-content: center;
+}
 .header {
-    background-color: #333; /* Background color for the header */
-    color: #fff; /* Text color for the header */
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space items evenly along the main axis */
-    align-items: center; /* Center items along the cross axis */
-    padding: 40px; /* Add padding to adjust spacing around header content */
-    height: 60px; /* Set the height of the header */
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.header h1 {
+    margin-left: 40px;
+}
+
 nav ul {
-    list-style: none; /* Remove default list styling for the navigation */
-    display: flex; /* Use flexbox layout for the navigation items */
-    gap: 50px; /* Adjust the gap between menu items */
-    font-size: 20px; /* Set the font size for navigation items */
-    font-family: 'Courier New', Courier, monospace; /* Set the font family for navigation items */
-    margin-right: 20px; /* Add margin to the right of the navigation */
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 60px;
 }
+
 nav a {
     text-decoration: none; /* Remove link underlines */
     color: #ffffff; /* Set the text color for navigation links */
@@ -24,14 +44,15 @@ nav a {
         color: #ff8800; /* Change the color on hover */
     }
 }
-body {
-    background-image: url('images/chosen_cafe_image-overlayed.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: transparent;
-}
 
+footer {
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px; /* Smaller font size */
+}
 .special-background {
     background-image: url('images/Images_MrsBeanCafe_Workshop/Workshop_coffeeBeans.png');
     background-size: cover;
@@ -39,17 +60,7 @@ body {
     background-attachment: fixed;
     background-color: transparent;
 }
-
-footer {
-    background-color: hsl(0, 0%, 20%);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 10px; /* Smaller font size */
-}
-
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     header {
         text-align: center;
         flex-direction: column; /* Stack items vertically */
@@ -58,14 +69,11 @@ footer {
         min-height: 85px; /* If the content is smaller than the minimum height, the minimum height will be applied.
                             If the content is larger than the minimum height, the min-height property has no effect. */
     }
-    
-
     header h1 {
         display: block; /* Ensure h1 is a block element */
         font-size: 28px; /* Adjust the font size as needed */
         margin-bottom: 10px; /* Add space between h1 and nav */
     }
-
     nav ul {
         list-style: none;
         padding: 0; /* remove padding on left, right, top, bottom */
@@ -74,7 +82,6 @@ footer {
         font-family: 'Courier New', Courier, monospace;
         margin-left: 20px;
     }
-
     nav li {
         display: block; /* Stack list items */
         margin-bottom: 5px; /* Adjust the margin between list items */
@@ -83,15 +90,12 @@ footer {
         font-size: 10px;
     }
 }
-
 /*-- End of shared header + body -----------------------------------------------------------------------------------------------------------------*/
 
 
 
-
-
-
 /*-- Start of Homepage css ---------------------------------------------------------------------------------------------------------------*/
+
 .slideshow-container-homepage {
     position: relative;
     width: 100%;
@@ -151,8 +155,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin: 0 10px; /* Adjust the margin as needed */
 }
 
 /* Style for white-container2 */
@@ -189,7 +192,7 @@ footer {
 
 /* Style for white-container */
 .white-container-homepage {
-    background-color: #bfbfbf;
+    background-color: #ffffff;
     padding: 20px;
     text-align: left;
     margin: 20px 10px;
@@ -208,7 +211,7 @@ footer {
 }
 
 .small-image-homepage {
-    max-width: 270px;
+    max-width: 280px;
     height: auto;
     margin: 4px;
     box-sizing: border-box;
@@ -222,21 +225,56 @@ footer {
     /* need the 0 for left and right because i need it to be in the middle */
 }
 
-.social-icons-homepage {
-    margin-top: 20px;
-    padding: 10px;
+.social-and-news-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
 }
 
-.social-icons-homepage a {
+.social-icons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons-container a {
     display: inline-block;
 }
 
-.social-icons-homepage img {
+.social-icons-container img {
     width: 30px;
     height: 30px;
 }
 
-@media (max-width: 700px) {
+.news-and-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px; /*to make it aligned with my label ('news & update')*/
+}
+
+.subscribe-inputs input {
+    margin-left: 15px;
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 20px;
+    background-color: transparent;
+    color: #808080;
+    border: 1px solid #424242;
+    border-radius: 20px;
+    font-size: 10px; /* Increase font size for better visibility */
+    padding: 5px;
+    &:hover {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+@media (max-width: 600px) {
     .custom-button-homepage {
         font-size: 13px;
     }
@@ -277,6 +315,35 @@ footer {
         width: 100%;
         margin-top: 20px;
     }
+    .social-and-news-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 10px;
+    }
+
+    .social-icons-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center; /* Center the items horizontally */
+    }
+
+    .social-icons-container a {
+        display: inline-block;
+    }
+
+    .social-icons-container img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+
+    .news-and-form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
@@ -300,7 +367,7 @@ footer {
 
 
 /* Media queries for responsiveness */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .button-container-menu {
         grid-template-columns: repeat(2, 1fr); /* Set the grid to two columns when the screen is 700px or smaller (2)*/
         font-size: 12px;
@@ -313,10 +380,10 @@ footer {
 .cart-container {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -400px;  /*to hide this box when nothing is added*/
+    width: 400px;
     height: 100%;
-    background-color: #f5f5f5; /* Greyish-white background */
+    background-color: #333; /* Grey background */
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
     overflow-y: auto;
@@ -326,46 +393,86 @@ footer {
 }
 
 .cart-heading {
-    font-size: 30px;
+    display: block;
+    font-size: 35px;
     font-weight: bold;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-.cart-content {
-    flex: 1;
-    padding: 20px;
-}
-
-.cart-header {
-    background-color: #333;
+    padding: 80px; /*ultimately this will only be giving padding to top and right*/
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
+    padding-bottom: unset; /*cz now i want to change the padding size but only for the bottom*/
+    padding-left: 10px; /*to align with grey line*/
+    white-space: nowrap; /* Ensure text stays in one line */
+}
+
+/*------------------------------------regarding price----------------------------------------------*/
+.total-price {
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 250px;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+.cart-heading + .grey-line-menu {
     margin-bottom: 10px;
 }
 
+.grey-line-menu {
+    border: 2px solid grey; /* Grey border above the heading */
+    margin: 10px; 
+}
+
+.cart-content {
+    margin-top: 10px;
+    flex: 1;
+    color: #fff;
+    font-size: 16px;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 150px;
+    height: 150px;
+    margin: 10px; /*to align it with the grey line*/
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
 .check-close-cart-btn {
-    background-color: #333;
-    color: #fff; /* White text */
+    background-color: #ffffff;
+    color: #000000; /* black text */
     border: none;
     padding: 10px;
     cursor: pointer;
-    width: 100%;
+    width: 70%;
     font-size: 16px;
-    margin-top: 20px;
+    /* Center the button horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+.close-cart-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff; /* Adjust the color as needed */
 }
 
-.close-cart-btn:hover {
-    background-color: #555;
+@media (max-width: 600px) {
+    .cart-container {
+        width: 300px;
+    }
 }
-
-.total-price {
-    margin-left: 10px;
-}
-
-
 
 /*-- End of menu css ----------------------------------------------------------------------------------------------------*/
 

@@ -1,3 +1,8 @@
+document.getElementById('subscribeButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    alert('Subscription successful!'); // You can customize the alert message
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     let slideIndex = 1;
     showSlides(slideIndex);

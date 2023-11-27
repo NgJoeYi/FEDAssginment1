@@ -44,6 +44,7 @@ https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1nxXE_scpIDOj6fko0_mQbKd3
 https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVtsg-J4d7aYFybQNUSIxdbAsCvTyNFebfN7gEpvJ5BPmt6A8e
 https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEQ6MfQ7jRGPBdAQ4Lei4E9Lyj-qLrJ3GLypFYRNOHFN9pNyL-
 https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyeeWeblh6BWdH0qGRmjnbprSVGXX6tlHzLMiKAuUB5XqiQ-m2
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.veryicon.com%2Ficons%2Fbusiness%2Fsimple-linear-icon-icon%2Fdelete-332.html&psig=AOvVaw2bS8o43sFFCwVOAWIemUAw&ust=1701156090291000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjRw7rS44IDFQAAAAAdAAAAABAD
 
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMH1LaEjxW4hQpLBe3F2oVcGSVBKPlwvxziKq47lGOnP6WLPlV
 https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6TeK4Kejqu-M3Dkwfw1-WwyGRWilcYwpNoiAm5xMc-WOXXvje

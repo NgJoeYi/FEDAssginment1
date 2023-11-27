@@ -263,6 +263,7 @@
             </div>
         </div>
     </div>
+    
 
     <footer>
         <p>MARINA BAY SANDS | 10 BAYFRONT AVENUE, SINGAPORE 018956 | HOTEL TOWER 1, LEVEL 57 SANDS SKYPARK</p>
@@ -272,56 +273,92 @@
     </footer>
 
     <div class="cart-container">
+        <div class="close-cart-btn" onclick="closeCart()">X</div>
         <div class="cart-heading">Your Cart</div> <!-- need use a different class here since it is associated to menu items name and price -->
+        <div class="grey-line-menu"></div>
         <div class="cart-content">
             <!-- Cart content will be dynamically updated here -->
         </div>
-        <div class="total-price">Total: $0.00</div>
+        <div class="grey-line-menu"></div>
+        <div class="total-price">$0.00</div>
         <button class="check-close-cart-btn" onclick="checkout()">Checkout</button>
-        <button class="check-close-cart-btn" onclick="closeCart()">Close Cart</button>
     </div>
     
     <script>
         var cart = [];
-    
+
         function updateCartDisplay() {
             console.log("Cart updated:", cart);
             // Update the cart content in the UI (you can customize this part)
             var cartContent = document.querySelector('.cart-content');
             cartContent.innerHTML = ''; // Clear previous content
-    
+
             // Add each item to the cart content
             cart.forEach(function (item) {
                 var itemElement = document.createElement('div');
-                itemElement.textContent = item.name + ' - $' + item.price.toFixed(2);
+                itemElement.classList.add('cart-item');
+
+                // Create an image element
+                var imageElement = document.createElement('img');
+                imageElement.src = item.image;
+                imageElement.alt = item.name;
+                itemElement.appendChild(imageElement);
+
+                // Create a div for name, quantity, and price
+                var detailsElement = document.createElement('div');
+                detailsElement.classList.add('cart-item-details');
+
+                // Add name, quantity, and price to the details div
+                detailsElement.innerHTML = `<p>${item.name}<br>Quantity: ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}</p>`;
+
+                // Append the details div to the item element
+                itemElement.appendChild(detailsElement);
+
+                // Append the item element to the cart content
                 cartContent.appendChild(itemElement);
             });
-    
+
             // Calculate the total price
             var totalPrice = cart.reduce(function (sum, item) {
-                return sum + item.price;
+                return sum + item.price * item.quantity;
             }, 0).toFixed(2);
-    
+
             // Update the total price element
             var totalPriceElement = document.querySelector('.total-price');
             totalPriceElement.textContent = 'Total: $' + totalPrice;
         }
+
+
     
         function addToCart(button) {
-            var parentElement = button.parentElement;
+            var parentElement = button.closest('.button-deals');
             var foodName = parentElement.querySelector('.food-name').textContent;
             var foodPrice = parseFloat(parentElement.querySelector('.food-price').textContent.replace('$', ''));
-            var item = {
-                name: foodName,
-                price: foodPrice
-            };
-            cart.push(item);
-    
+            var foodImage = parentElement.querySelector('img').src;
+
+            // Check if the item is already in the cart
+            var existingItem = cart.find(item => item.name === foodName);
+
+            if (existingItem) {
+                // If the item exists, increment its quantity
+                existingItem.quantity += 1;
+            } else {
+                // If the item doesn't exist, add a new item to the cart
+                var item = {
+                    name: foodName,
+                    price: foodPrice,
+                    image: foodImage,
+                    quantity: 1
+                };
+                cart.push(item);
+            }
+
             // No alert here
-    
             updateCartDisplay();
             slideOutCart(); // Call the function to slide out the cart
         }
+
+
     
         function slideOutCart() {
             var cartContainer = document.querySelector('.cart-container');
@@ -330,7 +367,7 @@
     
         function closeCart() {
             var cartContainer = document.querySelector('.cart-container');
-            cartContainer.style.right = '-300px'; // Hide the cart off-screen
+            cartContainer.style.right = '-500px'; // Hide the cart off-screen
         }
     
         function checkout() {
