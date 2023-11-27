@@ -65,14 +65,12 @@ footer {
         text-align: center;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
-        padding: 30px; /* Add padding to adjust spacing */
-        min-height: 85px; /* If the content is smaller than the minimum height, the minimum height will be applied.
-                            If the content is larger than the minimum height, the min-height property has no effect. */
+        padding: 10px;
     }
     header h1 {
         display: block; /* Ensure h1 is a block element */
         font-size: 28px; /* Adjust the font size as needed */
-        margin-bottom: 10px; /* Add space between h1 and nav */
+        margin-right: 44px;
     }
     nav ul {
         list-style: none;
@@ -80,7 +78,7 @@ footer {
         text-align: center; /* Center the list items */
         font-size: 15px;
         font-family: 'Courier New', Courier, monospace;
-        margin-left: 20px;
+        margin-left: 80px;
     }
     nav li {
         display: block; /* Stack list items */
@@ -160,7 +158,7 @@ footer {
 
 /* Style for white-container2 */
 .white-container2-homepage {
-    background-color: #bfbfbf;
+    background-color: #ffffff;
     padding: 20px;
     text-align: left;
     box-sizing: border-box;
@@ -173,7 +171,7 @@ footer {
 }
 
 .white-container2-homepage h4 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: unset;
 }
 
@@ -210,8 +208,14 @@ footer {
     font-size: 12px;
 }
 
+.small-images-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next row cz i want it to be in the same row no matter the width */ 
+    overflow-x: auto; /* Add horizontal scroll if the images exceed the container width */
+}
+
 .small-image-homepage {
-    max-width: 280px;
+    max-width: 290px;
     height: auto;
     margin: 4px;
     box-sizing: border-box;
@@ -245,29 +249,30 @@ footer {
 }
 
 .news-and-form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row; /* Change to row layout for big screens */
     align-items: center;
-    margin-left: 10px; /*to make it aligned with my label ('news & update')*/
+    margin-right: 0; /* Remove the right margin for the container */
+}
+
+label {
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .subscribe-inputs input {
-    margin-left: 15px;
-    width: 80%; /* Adjust the width as needed */
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-left: 5px; 
+    margin-bottom: 0; /* Remove the bottom margin for the input */
+    width: 60%; /* Adjust the width as needed */
+    padding: 8px; /* Adjust the padding as needed */
 }
 
 button {
-    margin-left: 20px;
+    margin-right: 0;
     background-color: transparent;
     color: #808080;
     border: 1px solid #424242;
     border-radius: 20px;
     font-size: 10px; /* Increase font size for better visibility */
-    padding: 5px;
+    padding: 8px;
     &:hover {
         background-color: #333;
         color: #fff;
@@ -343,12 +348,21 @@ button {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        margin-left: 30px;
+    }
+    .subscribe-inputs input {
+        margin-left: 60px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    button {
+        margin-left: 155px;
     }
 }
-
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
 /*-- Start of Menu css--------------------------------------------------------------------------------------------------------------------*/
+/*one thing to note for this page is that i reuse and make efficient of the classes in deals page*/
 .menu-category {
     text-align: center;
     color: #fff;
@@ -365,18 +379,6 @@ button {
     color: #000000;
 }
 
-
-/* Media queries for responsiveness */
-@media (max-width: 600px) {
-    .button-container-menu {
-        grid-template-columns: repeat(2, 1fr); /* Set the grid to two columns when the screen is 700px or smaller (2)*/
-        font-size: 12px;
-    }
-    .button-container-menu h1 {
-        font-size: 20px;
-        margin: 5px;
-    }
-}
 .cart-container {
     position: fixed;
     top: 0;
@@ -472,6 +474,11 @@ button {
     .cart-container {
         width: 300px;
     }
+    .button-container-menu {
+        grid-template-columns: repeat(2, 1fr); /* Set the grid to two columns when the screen is 700px or smaller (2)*/
+        font-size: 12px;
+    }
+
 }
 
 /*-- End of menu css ----------------------------------------------------------------------------------------------------*/
@@ -822,9 +829,14 @@ button {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .button-container-deals {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); 
     } /* sets the grid to have as many columns as can fit in the container, each with a minimum width of 100%. (1)*/
+    .button-link-deals {
+        display: block; /* Make the button a block element */
+        margin: 0 auto; /* Center the button horizontally */
+        text-align: center; /* Center the text within the button */
+    }
 }
 
