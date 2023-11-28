@@ -236,7 +236,7 @@ footer {
 
 .social-icons-container {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .social-icons-container a {
@@ -244,29 +244,42 @@ footer {
 }
 
 .social-icons-container img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .news-and-form-container {
-    flex-direction: row; /* Change to row layout for big screens */
+    display: flex;
+    flex-direction: column; /* Change to column layout */
     align-items: center;
-    margin-right: 0; /* Remove the right margin for the container */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 label {
-    margin-right: 10px; /* Adjust the margin as needed */
+    font-size: 23px;
+    margin-bottom: 15px; /* Add margin at the bottom */
+    margin-right: 100px;
+}
+
+.subscribe-inputs {
+    display: flex; /* Use flexbox for input and button container */
+    flex-direction: row; /* Arrange input and button in a row */
+    align-items: center; /* Align items vertically */
+    height: 40px;
+    margin-right: 40px;
 }
 
 .subscribe-inputs input {
-    margin-left: 5px; 
-    margin-bottom: 0; /* Remove the bottom margin for the input */
-    width: 60%; /* Adjust the width as needed */
+    width: 80%; /* Adjust the width as needed */
     padding: 8px; /* Adjust the padding as needed */
+    text-align: center;
+    margin-right: 10px; /* Add margin to the right of the input */
 }
 
-button {
-    margin-right: 0;
+.subscribe-inputs button {
     background-color: transparent;
     color: #808080;
     border: 1px solid #424242;
@@ -278,6 +291,8 @@ button {
         color: #fff;
     }
 }
+
+
 
 @media (max-width: 600px) {
     .custom-button-homepage {
