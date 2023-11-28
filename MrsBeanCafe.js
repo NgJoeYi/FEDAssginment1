@@ -1,6 +1,91 @@
+// Your existing code for the cart
+var cart = [];
+
+function updateCartDisplay() {
+    console.log("Cart updated:", cart);
+    var cartContent = document.querySelector('.cart-content');
+    cartContent.innerHTML = '';
+
+    cart.forEach(function (item) {
+        var itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+
+        var imageElement = document.createElement('img');
+        imageElement.src = item.image;
+        imageElement.alt = item.name;
+        itemElement.appendChild(imageElement);
+
+        var detailsElement = document.createElement('div');
+        detailsElement.classList.add('cart-item-details');
+        detailsElement.innerHTML = `<p>${item.name}<br>Quantity: ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}</p>`;
+
+        itemElement.appendChild(detailsElement);
+        cartContent.appendChild(itemElement);
+    });
+
+    var totalPrice = cart.reduce(function (sum, item) {
+        return sum + item.price * item.quantity;
+    }, 0).toFixed(2);
+
+    var totalPriceElement = document.querySelector('.total-price');
+    totalPriceElement.textContent = 'Total: $' + totalPrice;
+}
+
+function addToCart(button) {
+    var parentElement = button.closest('.button-deals');
+    var foodName = parentElement.querySelector('.food-name').textContent;
+    var foodPrice = parseFloat(parentElement.querySelector('.food-price').textContent.replace('$', ''));
+
+    if (isNaN(foodPrice)) {
+        console.error('Invalid food price. Check the DOM structure.');
+        return;
+    }
+
+    var foodImage = parentElement.querySelector('img').src;
+
+    var existingItem = cart.find(item => item.name === foodName);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        var item = {
+            name: foodName,
+            price: foodPrice,
+            image: foodImage,
+            quantity: 1
+        };
+        cart.push(item);
+    }
+
+    updateCartDisplay();
+    slideOutCart();
+}
+
+function slideOutCart() {
+    var cartContainer = document.querySelector('.cart-container');
+    cartContainer.style.right = '0';
+}
+
+function closeCart() {
+    var cartContainer = document.querySelector('.cart-container');
+    cartContainer.style.right = '-500px';
+}
+
+function checkout() {
+    alert("Thank you for your purchase!");
+    closeCart();
+    clearCart();
+}
+
+function clearCart() {
+    cart = [];
+    updateCartDisplay();
+}
+
+// New code from your second block
 document.getElementById('subscribeButton').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    alert('Subscription successful!'); // You can customize the alert message
+    event.preventDefault();
+    alert('Subscription successful!');
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -16,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function currentSlide(n, event) {
-        event.preventDefault(); // Prevent the default behavior of the anchor tag
+        event.preventDefault();
         showSlides(slideIndex = n);
     }
 
@@ -46,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dots[slideIndex - 1].className += " active";
         }
     }
-    // Attach click event listeners to dots
+
     let dotElements = document.getElementsByClassName("dot-homepage");
     for (let i = 0; i < dotElements.length; i++) {
         dotElements[i].addEventListener("click", function (event) {
@@ -54,5 +139,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
