@@ -1,4 +1,3 @@
-// Your existing code for the cart
 var cart = [];
 
 function updateCartDisplay() {
@@ -82,7 +81,7 @@ function clearCart() {
     updateCartDisplay();
 }
 
-// New code from your second block
+
 document.getElementById('subscribeButton').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Subscription successful!');
