@@ -164,10 +164,15 @@ footer {
     box-sizing: border-box;
 }
 
+.white-container2-homepage p {
+    padding-top: 8px; /* more padding just to make sure the content is in the middle of the box */
+}
+
 .white-container2-homepage h2 {
-    font-size: 35px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-family: 'Arizonia';
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .white-container2-homepage h4 {
@@ -436,7 +441,7 @@ label {
 }
 
 .grey-line-menu {
-    border: 2px solid grey; /* Grey border above the heading */
+    border: 1px solid grey; /* Grey border above the heading */
     margin: 10px; 
 }
 
@@ -484,6 +489,15 @@ label {
     cursor: pointer;
     color: #fff; /* Adjust the color as needed */
 }
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30PX;
+}
 
 @media (max-width: 600px) {
     .cart-container {
@@ -526,6 +540,7 @@ label {
 .text-overlay h1 {
     font-size: 60px;
     margin-bottom: 10px;
+    font-family: 'Atma';
 }
 
 .text-overlay p {
@@ -572,6 +587,7 @@ label {
 .overlay-text h2 {
     font-size: 24px;
     margin-bottom: 30px;
+    font-family: 'Atma';
 }
 
 .overlay-text p {

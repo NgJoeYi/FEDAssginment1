@@ -280,8 +280,9 @@
             <!-- Cart content will be dynamically updated here -->
         </div>
         <div class="grey-line-menu"></div>
-        <div class="total-price">$0.00</div>
+        <div class="total-price">Total: $0.00</div>
         <button class="check-close-cart-btn" onclick="checkout()">Checkout</button>
+        <img src="images/Images_MrsBeanCafe_Menupage/menu_cartLogo.png" alt="Cart" class="cart-icon" onclick="slideOutCart()">
     </div>
     
     <script>
@@ -328,12 +329,17 @@
             totalPriceElement.textContent = 'Total: $' + totalPrice;
         }
 
-
-    
         function addToCart(button) {
             var parentElement = button.closest('.button-deals');
             var foodName = parentElement.querySelector('.food-name').textContent;
             var foodPrice = parseFloat(parentElement.querySelector('.food-price').textContent.replace('$', ''));
+
+            // Check if the price is a valid number
+            if (isNaN(foodPrice)) {
+                console.error('Invalid food price. Check the DOM structure.');
+                return;
+            }
+
             var foodImage = parentElement.querySelector('img').src;
 
             // Check if the item is already in the cart
@@ -353,23 +359,20 @@
                 cart.push(item);
             }
 
-            // No alert here
             updateCartDisplay();
-            slideOutCart(); // Call the function to slide out the cart
+            slideOutCart();
         }
 
-
-    
         function slideOutCart() {
             var cartContainer = document.querySelector('.cart-container');
             cartContainer.style.right = '0';
         }
-    
+
         function closeCart() {
             var cartContainer = document.querySelector('.cart-container');
             cartContainer.style.right = '-500px'; // Hide the cart off-screen
         }
-    
+
         function checkout() {
             alert("Thank you for your purchase!");
             closeCart();
@@ -377,9 +380,11 @@
         }
 
         function clearCart() {
-        cart = []; // Reset the cart to an empty array
-        updateCartDisplay(); // Update the display to reflect the empty cart
-    }
+            cart = []; // Reset the cart to an empty array
+            updateCartDisplay(); // Update the display to reflect the empty cart
+        }
+
+
     </script>
     
     

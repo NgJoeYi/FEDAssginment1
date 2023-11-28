@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
             dots[slideIndex - 1].className += " active";
         }
     }
-
     // Attach click event listeners to dots
     let dotElements = document.getElementsByClassName("dot-homepage");
     for (let i = 0; i < dotElements.length; i++) {
