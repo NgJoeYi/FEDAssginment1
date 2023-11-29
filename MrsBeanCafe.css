@@ -340,6 +340,14 @@ label {
         width: 100%;
         margin-top: 20px;
     }
+
+    .white-container2-homepage h2 {
+        font-size: 48px;
+    }
+
+    .white-container2-homepage p {
+        font-size: 13px;
+    }
     .social-and-news-container {
         display: flex;
         flex-direction: column; /* Stack items vertically */
@@ -368,16 +376,14 @@ label {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        margin-left: 30px;
+        margin-left: 110px;
     }
     .subscribe-inputs input {
-        margin-left: 60px;
         text-align: center;
         margin-bottom: 10px;
+        width: 150px;
     }
-    button {
-        margin-left: 155px;
-    }
+
 }
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
