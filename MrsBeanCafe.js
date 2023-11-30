@@ -40,7 +40,7 @@ function updateCartDisplay() {
     totalPriceElement.textContent = 'Total: $' + totalPrice;
 }
 
-// Function to add an item to the cart
+// Function to add an item to the cart --------------------------------------------------------------------
 function addToCart(button) {
     // Get the parent element of the clicked button
     var parentElement = button.closest('.button-deals');
@@ -80,7 +80,7 @@ function addToCart(button) {
     slideOutCart();
 }
 
-// Function to animate the sliding out of the cart
+// Function to animate the sliding out of the cart ----------------------------------------------------------------------------
 function slideOutCart() {
     var cartContainer = document.querySelector('.cart-container');
     cartContainer.style.right = '0';

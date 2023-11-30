@@ -378,12 +378,12 @@ label { /* this is my 'news and update' */
         align-items: center;
         margin-left: 110px;
     }
+
+    
     .subscribe-inputs input {
         text-align: center;
-        margin-bottom: 10px;
         width: 150px;
     }
-
 }
 /*-- End of Homepage css ---------------------------------------------------------------------------------------------------------*/
 
